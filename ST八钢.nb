@@ -1,0 +1,2217 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    103008,       2209]
+NotebookOptionsPosition[    102590,       2190]
+NotebookOutlinePosition[    102948,       2206]
+CellTagsIndexPosition[    102905,       2203]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"FinancialData", "[", 
+    RowBox[{"\"\<ss:600581\>\"", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"2017", ",", "2", ",", "20"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"2017", ",", "3", ",", "22"}], "}"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"DateListPlot", "[", 
+  RowBox[{"TimeSeries", "[", "data", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"TradingChart", "[", 
+  RowBox[{"\"\<ss:600581\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2017", ",", "2", ",", "20"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2017", ",", "3", ",", "22"}], "}"}]}], "}"}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.6992358219898233`*^9, 3.6992358287775283`*^9}, {
+   3.6992358644712906`*^9, 3.6992358818886085`*^9}, {3.69923596812166*^9, 
+   3.6992359854848146`*^9}, {3.6992360255005474`*^9, 3.699236082689779*^9}, {
+   3.699236189406151*^9, 3.6992361919068184`*^9}, {3.69923631897311*^9, 
+   3.6992363255822687`*^9}, 3.699236591750902*^9, {3.699236627690432*^9, 
+   3.6992366363138733`*^9}, {3.6992370323683834`*^9, 3.699237045292714*^9}, {
+   3.699237152692876*^9, 3.699237153129267*^9}, {3.6992372882900534`*^9, 
+   3.699237331253525*^9}, {3.6992374719715414`*^9, 3.699237472107482*^9}, {
+   3.6992376843976793`*^9, 3.6992377525445027`*^9}, {3.6992382923053875`*^9, 
+   3.699238350130657*^9}, {3.6992385067981853`*^9, 3.699238535413273*^9}, {
+   3.699238777274797*^9, 3.6992388139129887`*^9}, {3.699238865482921*^9, 
+   3.6992388658215103`*^9}, {3.6992391754478707`*^9, 3.699239247548533*^9}, {
+   3.6992394061541567`*^9, 3.6992394135020137`*^9}, {3.699239651834572*^9, 
+   3.699239705000656*^9}, {3.6992397455639215`*^9, 3.6992397572935*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, {}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
+      AbsoluteThickness[1.6], LineBox[CompressedData["
+1:eJxTTMoPSmViYGAQB2IQDQLTul47ftOI6T/0VcoByDU4AOSDeBox0iB+wisg
+v9CW6/riAjB/gkj3a0cQz5YLzD9g140iH7AXyIeYDOY3PAfy5VtfB+6QA/M3
+CPbA1MuA+A+sgfwlBSABMF8gDcgHK28F8xc86YG5TxbEv8DX+9rxYZXIOveH
+ciA+g2UvzHx5sPuTgXygZJWIngLY/b1AvjEYgPkfuPtg5oHVK5gB+ZpgD4P5
+AQlwPlh9QxeQ7wGy8DiYv2ELkH/4K8gAMN/BuP+146yZIKAI4hfEAvnVIOf9
+AvMXtPfD3KfkAACZ1ocn
+      "]]}}, {}, {}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{False, False},
+  AxesLabel->{None, None},
+  AxesOrigin->{3.6965376*^9, 6.6240000000000006`},
+  DisplayFunction->Identity,
+  Frame->{{True, True}, {True, True}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->
+   FrontEndValueCache[{{Automatic, Automatic}, {Charting`FindScaledTicks[
+       (Charting`getDateTicks[Automatic, {Automatic}, 
+        (Map[DateList, {
+          SlotSequence[1]}]& )[
+         SlotSequence[1]], None, 5, {{0.0125, 0}, {0.0075, 0}}, Automatic]& )[
+        SlotSequence[1]], {Identity, Identity}]& , Charting`ScaledFrameTicks[
+       (Charting`getDateTicks[Charting`getDateTicks[Automatic, {Automatic}, 
+         (Map[DateList, {
+           SlotSequence[1]}]& )[
+          SlotSequence[1]], None, 5, {{0.0125, 0}, {0.0075, 0}}, 
+         Automatic]& , {Automatic}, 
+        (Map[DateList, {
+          SlotSequence[1]}]& )[
+         SlotSequence[1]], None, 5, {{0.0125, 0}, {0.0075, 0}}, None]& )[
+        SlotSequence[1]], {Identity, Identity}]& }}, {{
+     Automatic, Automatic}, {{{3.6965376*^9, 
+        FormBox["\"Feb 20\"", TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6971424*^9, 
+        FormBox["\"Feb 27\"", TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6977472*^9, 
+        FormBox["\"Mar 06\"", TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.698352*^9, 
+        FormBox["\"Mar 13\"", TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6989568*^9, 
+        FormBox["\"Mar 20\"", TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6995616*^9, 
+        FormBox["\"Mar 27\"", TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6965376*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.696624*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6967104*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6967968*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6968832*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6969696*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.697056*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6971424*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6972288*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6973152*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6974016*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.697488*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6975744*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6976608*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6977472*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6978336*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.69792*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6980064*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6980928*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6981792*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6982656*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.698352*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6984384*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6985248*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6986112*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6986976*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.698784*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6988704*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6989568*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6990432*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6991296*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 
+        0.}}}, {{3.6965376*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6971424*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6977472*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.698352*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6989568*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6995616*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6965376*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.696624*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6967104*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6967968*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6968832*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6969696*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.697056*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6971424*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6972288*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6973152*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6974016*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.697488*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6975744*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6976608*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6977472*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6978336*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.69792*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6980064*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6980928*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6981792*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6982656*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.698352*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6984384*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6985248*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6986112*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6986976*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.698784*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6988704*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6989568*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6990432*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}, {
+       3.6991296*^9, 
+        FormBox[
+         InterpretationBox[
+          StyleBox[
+           
+           GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+            Baseline], "CacheGraphics" -> False], 
+          Spacer[{0., 0.}]], TraditionalForm], {0.008333333333333333, 0.}}}}}],
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  ImageSize->{562., Automatic},
+  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{3.6965376*^9, 3.6991296*^9}, {6.74, 9.06}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{{}, Automatic}]], "Output",
+ CellChangeTimes->{3.6992397074820566`*^9, 3.699239843495563*^9, 
+  3.6996879219744325`*^9}],
+
+Cell[BoxData[
+ GraphicsBox[
+  DynamicModuleBox[{System`TradingChartDump`$timestampdepth$4453 = "Full", 
+   System`TradingChartDump`$highlightposition$4453 = Automatic, 
+   System`TradingChartDump`$maxohlc$4453 = 9.28`3., 
+   System`TradingChartDump`$timestampstyle$4453 = Directive[
+    GrayLevel[0.75], 
+    Opacity[0.25]], System`TradingChartDump`$dates$4453 = CompressedData["
+1:eJxNkztOBEEMRDcg4hbcwG7/M1IkIo5AgEREsNxfeAl2XzLq0tTYetU1L58/
+H1+vl8vl+rSP9+/r79vzHixHu46I3OVE+0MecW9IExfKEZq9kuZIO5Dpk5Aj
+TfNMwGzSCrPpbfBDnnDstVCjec80ZyfNVQd7rWOw11WJ78vflKM07yzsdU+G
+43WIv3OI731TDzl9sDckGU7YIX64Ej9ChOb4v9G7zGI4MUb8FCV+qkRSDruR
+pxhOhhE/8xA/S9mNrGE3Fo/hlDrx6xzilym7US7sRnkznConfrURv/6B7nI/
+ZDf2ihhOWxC/3YjfcdiNTmU3endhb+89wLy/DfG3VezGHGU39mdgODvp9voP
+WPGa3g==
+   "], System`TradingChartDump`$visdates$4453 = {
+   1 -> "Wed. Dec 28, 2016", 2 -> "Thu. Dec 29, 2016", 3 -> 
+    "Fri. Dec 30, 2016", 4 -> "Mon. Jan 02, 2017", 5 -> "Tue. Jan 03, 2017", 
+    6 -> "Wed. Jan 04, 2017", 7 -> "Thu. Jan 05, 2017", 8 -> 
+    "Fri. Jan 06, 2017", 9 -> "Mon. Jan 09, 2017", 10 -> "Tue. Jan 10, 2017", 
+    11 -> "Wed. Jan 11, 2017", 12 -> "Thu. Jan 12, 2017", 13 -> 
+    "Fri. Jan 13, 2017", 14 -> "Mon. Jan 16, 2017", 15 -> "Tue. Jan 17, 2017",
+     16 -> "Wed. Jan 18, 2017", 17 -> "Thu. Jan 19, 2017", 18 -> 
+    "Fri. Jan 20, 2017", 19 -> "Mon. Jan 23, 2017", 20 -> "Tue. Jan 24, 2017",
+     21 -> "Wed. Jan 25, 2017", 22 -> "Thu. Jan 26, 2017", 23 -> 
+    "Fri. Jan 27, 2017", 24 -> "Mon. Jan 30, 2017", 25 -> "Tue. Jan 31, 2017",
+     26 -> "Wed. Feb 01, 2017", 27 -> "Thu. Feb 02, 2017", 28 -> 
+    "Fri. Feb 03, 2017", 29 -> "Mon. Feb 06, 2017", 30 -> "Tue. Feb 07, 2017",
+     31 -> "Wed. Feb 08, 2017", 32 -> "Thu. Feb 09, 2017", 33 -> 
+    "Fri. Feb 10, 2017", 34 -> "Mon. Feb 13, 2017", 35 -> "Tue. Feb 14, 2017",
+     36 -> "Wed. Feb 15, 2017", 37 -> "Thu. Feb 16, 2017", 38 -> 
+    "Fri. Feb 17, 2017", 39 -> "Mon. Feb 20, 2017", 40 -> "Tue. Feb 21, 2017",
+     41 -> "Wed. Feb 22, 2017", 42 -> "Thu. Feb 23, 2017", 43 -> 
+    "Fri. Feb 24, 2017", 44 -> "Mon. Feb 27, 2017", 45 -> "Tue. Feb 28, 2017",
+     46 -> "Wed. Mar 01, 2017", 47 -> "Thu. Mar 02, 2017", 48 -> 
+    "Fri. Mar 03, 2017", 49 -> "Mon. Mar 06, 2017", 50 -> "Tue. Mar 07, 2017",
+     51 -> "Wed. Mar 08, 2017", 52 -> "Thu. Mar 09, 2017", 53 -> 
+    "Fri. Mar 10, 2017", 54 -> "Mon. Mar 13, 2017", 55 -> "Tue. Mar 14, 2017",
+     56 -> "Wed. Mar 15, 2017", 57 -> "Thu. Mar 16, 2017", 58 -> 
+    "Fri. Mar 17, 2017", 59 -> "Mon. Mar 20, 2017", 60 -> "Tue. Mar 21, 2017",
+     61 -> "Wed. Mar 22, 2017", 62 -> "Thu. Mar 23, 2017", 63 -> 
+    "Fri. Mar 24, 2017", 64 -> "Mon. Mar 27, 2017"}, 
+   System`TradingChartDump`$subplotrect$4453, 
+   System`TradingChartDump`$subplotpoint$4453, 
+   System`TradingChartDump`$ndigits$4453 = 3, 
+   System`TradingChartDump`$highlightstyle$4453 = Directive[
+    PointSize[0.01], 
+    GrayLevel[0]], System`TradingChartDump`$bouncingballstyle$4453 = Directive[
+    PointSize[0.01], 
+    GrayLevel[0]], System`TradingChartDump`$bouncingballQ$4453 = True, 
+   System`TradingChartDump`$timestampQ$4453 = True, 
+   System`TradingChartDump`$data$4453 = {{
+    3691872000, {6.7, 6.9, 6.53, 6.6, 11474900}}, {
+    3691958400, {6.64, 6.67, 6.52, 6.58, 7053800}}, {
+    3692044800, {6.58, 6.67, 6.53, 6.66, 6467000}}, {
+    3692304000, {6.66, 6.66, 6.66, 6.66, 0}}, {
+    3692390400, {6.69, 6.97, 6.68, 6.93, 11813100}}, {
+    3692476800, {6.89, 7.24, 6.89, 7.14, 13627100}}, {
+    3692563200, {
+     7.139999999999999, 7.219999999999999, 6.919999999999999, 7.03, 
+      13079500}}, {3692649600, {6.98, 7.13, 6.95, 7.09, 6620600}}, {
+    3692908800, {7.08, 7.14, 7.03, 7.1, 5278500}}, {
+    3692995200, {7.07, 7.15, 6.84, 6.91, 10077700}}, {
+    3693081600, {6.7, 6.93, 6.7, 6.76, 9831600}}, {
+    3693168000, {
+     6.789999999999999, 6.799999999999999, 6.419999999999999, 6.42, 
+      15697400}}, {3693254400, {6.47, 6.48, 6.15, 6.24, 13579100}}, {
+    3693513600, {6.21, 6.25, 5.93, 5.93, 15190800}}, {
+    3693600000, {5.89, 6.05, 5.66, 5.99, 14672100}}, {
+    3693686400, {5.97, 6.22, 5.93, 6.1, 12349700}}, {
+    3693772800, {6.08, 6.15, 6.05, 6.07, 4340900}}, {
+    3693859200, {6.08, 6.16, 6.03, 6.13, 6037300}}, {
+    3694118400, {6.13, 6.36, 6.12, 6.28, 7968600}}, {
+    3694204800, {
+     6.279999999999999, 6.379999999999999, 6.259999999999999, 6.34, 
+      6990500}}, {
+    3694291200, {
+     6.319999999999999, 6.3999999999999995`, 6.2299999999999995`, 6.26, 
+      6750600}}, {
+    3694377600, {
+     6.289999999999999, 6.379999999999999, 6.279999999999999, 6.34, 
+      5016000}}, {
+    3694464000, {
+     6.339999999999999, 6.339999999999999, 6.339999999999999, 6.34, 0}}, {
+    3694723200, {
+     6.339999999999999, 6.339999999999999, 6.339999999999999, 6.34, 0}}, {
+    3694809600, {
+     6.339999999999999, 6.339999999999999, 6.339999999999999, 6.34, 0}}, {
+    3694896000, {
+     6.339999999999999, 6.339999999999999, 6.339999999999999, 6.34, 0}}, {
+    3694982400, {
+     6.339999999999999, 6.339999999999999, 6.339999999999999, 6.34, 0}}, {
+    3695068800, {6.28, 6.35, 6.18, 6.23, 4742000}}, {
+    3695328000, {6.24, 6.26, 6.17, 6.18, 4725600}}, {
+    3695414400, {6.19, 6.29, 6.17, 6.23, 5065300}}, {
+    3695500800, {6.25, 6.48, 6.2, 6.47, 9666400}}, {
+    3695587200, {6.59, 6.79, 6.59, 6.77, 19057900}}, {
+    3695673600, {
+     6.849999999999999, 7.079999999999999, 6.709999999999999, 6.84, 
+      21447400}}, {
+    3695932800, {
+     7.169999999999999, 7.179999999999999, 6.879999999999999, 6.96, 
+      25011300}}, {3696019200, {7.01, 7.17, 6.92, 7.06, 18118400}}, {
+    3696105600, {7.08, 7.09, 6.71, 6.71, 20476900}}, {
+    3696192000, {
+     6.659999999999999, 6.819999999999999, 6.639999999999999, 6.69, 
+      13842300}}, {3696278400, {6.71, 6.73, 6.49, 6.58, 13407900}}, {
+    3696537600, {6.6, 6.78, 6.51, 6.74, 10385600}}, {
+    3696624000, {
+     6.769999999999999, 6.9399999999999995`, 6.739999999999999, 6.84, 
+      10898000}}, {
+    3696710400, {
+     6.889999999999999, 6.889999999999999, 6.769999999999999, 6.86, 
+      8300500}}, {3696796800, {6.81, 6.87, 6.66, 6.76, 7930100}}, {
+    3696883200, {
+     6.739999999999999, 6.879999999999999, 6.639999999999999, 6.86, 
+      7319000}}, {3697142400, {6.95, 6.96, 6.73, 6.75, 7089900}}, {
+    3697228800, {6.74, 6.83, 6.71, 6.78, 4964000}}, {
+    3697315200, {6.77, 7.12, 6.77, 7.11, 27035900}}, {
+    3697401600, {7.15, 7.43, 7.1, 7.16, 26222400}}, {
+    3697488000, {7.15, 7.4, 7.11, 7.13, 15459200}}, {
+    3697747200, {7.16, 7.49, 7.16, 7.49, 22372000}}, {
+    3697833600, {7.6, 7.86, 7.55, 7.72, 30953000}}, {
+    3697920000, {7.69, 7.94, 7.61, 7.78, 15322600}}, {
+    3698006400, {7.87, 8.17, 7.75, 8.09, 28815200}}, {
+    3698092800, {8.17, 8.25, 7.94, 8.1, 18089700}}, {
+    3698352000, {8.26, 8.28, 7.96, 7.99, 14814800}}, {
+    3698438400, {8.05, 8.15, 7.7, 7.79, 21131800}}, {
+    3698524800, {7.73, 8.18, 7.72, 8.08, 21069100}}, {
+    3698611200, {8.12, 8.46, 8.02, 8.39, 20371800}}, {
+    3698697600, {8.5, 8.68, 8.35, 8.38, 17325000}}, {
+    3698956800, {8.5, 8.8, 8.45, 8.8, 19589300}}, {
+    3699043200, {8.88, 9.24, 8.65, 8.99, 30318100}}, {
+    3699129600, {8.95, 9.28, 8.85, 9.06, 19182800}}, {
+    3699216000, {9., 9.09, 8.78, 8.92, 15479400}}, {
+    3699302400, {8.88, 9.12, 8.6, 8.81, 16266400}}, {
+    3699561600, {8.88, 8.94, 8.67, 8.78, 11235800}}}, 
+   System`TradingChartDump`$markerstyle$4453 = {
+    RGBColor[0.368417, 0.506779, 0.709798], 
+    RGBColor[0.880722, 0.611041, 0.142051], 
+    RGBColor[0.560181, 0.691569, 0.194885], 
+    RGBColor[0.922526, 0.385626, 0.209179], 
+    RGBColor[0.528488, 0.470624, 0.701351], 
+    RGBColor[0.772079, 0.431554, 0.102387], 
+    RGBColor[0.363898, 0.618501, 0.782349], 
+    RGBColor[1, 0.75, 0], 
+    RGBColor[0.647624, 0.37816, 0.614037], 
+    RGBColor[0.571589, 0.586483, 0.], 
+    RGBColor[0.915, 0.3325, 0.2125], 
+    RGBColor[0.40082222609352647`, 0.5220066643438841, 0.85], 
+    RGBColor[0.9728288904374106, 0.621644452187053, 0.07336199581899142], 
+    RGBColor[0.736782672705901, 0.358, 0.5030266573755369], 
+    RGBColor[0.28026441037696703`, 0.715, 0.4292089322474965]}, 
+   System`TradingChartDump`$controlmin$4453 = 0.5, 
+   System`TradingChartDump`$controlmax$4453 = 64.5, 
+   System`TradingChartDump`$datescope$4453 = {{"`", "YearShort"}}, 
+   System`TradingChartDump`$aspectratio$4453 = GoldenRatio^(-1), 
+   System`TradingChartDump`$min$4453, System`TradingChartDump`$max$4453, 
+   System`TradingChartDump`$ohlclabel$4453 = Grid[{{
+      Style["O: ", 12, 
+       Directive[
+        GrayLevel[0.4], FontFamily -> "Arial"], FontFamily -> "Times", 
+       LineBreakWithin -> False], 
+      Style[
+       Dynamic[
+        ReplaceAll[System`TradingChartDump`$indicatorpos$4453, 
+         Dispatch[System`TradingChartDump`$opens$4453]]], 12, 
+       Directive[
+        GrayLevel[0.4], FontFamily -> "Arial"], FontFamily -> "Times"], 
+      Style["H: ", 12, 
+       Directive[
+        GrayLevel[0.4], FontFamily -> "Arial"], FontFamily -> "Times", 
+       LineBreakWithin -> False], 
+      Style[
+       Dynamic[
+        ReplaceAll[System`TradingChartDump`$indicatorpos$4453, 
+         Dispatch[System`TradingChartDump`$highs$4453]]], 12, 
+       Directive[
+        GrayLevel[0.4], FontFamily -> "Arial"], FontFamily -> "Times"], 
+      Style["L: ", 12, 
+       Directive[
+        GrayLevel[0.4], FontFamily -> "Arial"], FontFamily -> "Times", 
+       LineBreakWithin -> False], 
+      Style[
+       Dynamic[
+        ReplaceAll[System`TradingChartDump`$indicatorpos$4453, 
+         Dispatch[System`TradingChartDump`$lows$4453]]], 12, 
+       Directive[
+        GrayLevel[0.4], FontFamily -> "Arial"], FontFamily -> "Times"], 
+      Style["C: ", 12, 
+       Directive[
+        GrayLevel[0.4], FontFamily -> "Arial"], FontFamily -> "Times", 
+       LineBreakWithin -> False], 
+      Style[
+       Dynamic[
+        ReplaceAll[System`TradingChartDump`$indicatorpos$4453, 
+         Dispatch[System`TradingChartDump`$closes$4453]]], 12, 
+       Directive[
+        GrayLevel[0.4], FontFamily -> "Arial"], FontFamily -> "Times"], 
+      Style[
+       Dynamic[
+        ReplaceAll[System`TradingChartDump`$indicatorpos$4453, 
+         Dispatch[System`TradingChartDump`$visdates$4453]]], 12, 
+       Directive[
+        GrayLevel[0.4], FontFamily -> "Arial"], FontFamily -> "Times", 
+       LineBreakWithin -> False]}}, ItemSize -> Automatic, 
+    Spacings -> {{0, 0, 1, 0, 1, 0, 1, 0, 1, 0}, 0}, Frame -> False], 
+   System`TradingChartDump`$ohlcpoint$4453 = {}, 
+   System`TradingChartDump`$subpricegridlines$4453 = Automatic, 
+   System`TradingChartDump`$overlaypoint$4453, 
+   System`TradingChartDump`$overlayvalue$4453, 
+   System`TradingChartDump`$subplotvalue$4453, 
+   System`TradingChartDump`$opts$4453 = {
+   AspectRatio -> GoldenRatio^(-1), Axes -> Automatic, 
+    AxesLabel -> {None, None}, Frame -> True, FrameLabel -> {None, None}, 
+    GridLines -> Automatic, GridLinesStyle -> Directive[
+      GrayLevel[0.5, 0.4]], LabelStyle -> {
+      GrayLevel[0.4], FontFamily -> "Arial"}}, 
+   System`TradingChartDump`$candlestickchart$4453 = {{{}, {
+     Antialiasing -> Automatic, {
+       Directive[
+        AbsoluteThickness[1], 
+        EdgeForm[None], 
+        RGBColor[0.5, 0.7, 0]], {{Antialiasing -> False, 
+         Directive[
+          AbsoluteThickness[1], 
+          EdgeForm[None]], 
+         Line[CompressedData["
+1:eJyV1TtsE0EQBuATNECLBc6dYydXRKGJEEHmpYTlES5EJlLSUJAKCVpCGxoX
+pCU1tKFOQ+PaFDRQp05DA60pqNjbf2b+7CrWiZMs6/Psc25nPf/yzfar81mW
+bfjPOfngueB6+7+2Rt3cqbdHXf8LfVSd7LWO6M+7K5eOD9UtF5qP6K+TxZ2D
+MV33rk6KpL267Q7GdYfp/lMPN+kkcfWc+/G9fgrz7616Bjpsb5/td8IA6lL2
+T2P/dDxf6V6HR70g8+dTHe93wfnk+QyqlySfV8yY76p5OTxtM/Kh8esyPo18
+p26bsX71Ddk/jf3TWB+NfKqX3bt6+D06jb+tu+/OmDGf+qa7GPJBd5P4+zAe
+jfen7ift+y6kZ5GO+/eT/rfci/903P92Em923P9OEm923P9uEm923P9eEm92
+3H9V7oe2GfVPX4vex6rUp8bvS73Q+J4xoz2N86x2sp58qjF/YQ7HtSUePpD1
+06jPThKnw3FeUT90H0K95ubD0/ejd+heFebofhw+kvlo1CeNeinMqH/d32M3
+SXz59P68w/LGNPKj460l61+Lx/NG/bA96ln9xIXlH+fmaH3euE/YPtpPVsXv
+4wzjfumYMb/mv4rvY+9PH+uHxv04a8Z9pvH1RmM/s2c7eyr3c9eM9dBYb8+M
+8yvxocZpnI/UPTPyp+NtyDeNfNHh/TyfM4f0LqkH8Xq8UW80zgvbo57Ew4Gc
+Xxr1QWM8er2e8Jv6GfL1k8Y882a8zynONnF/DGjki0Y+yth/dbxNvL8vNNZD
+4/+4NCP/pfsHHVBQ8w==
+          "]]}, 
+        Polygon[CompressedData["
+1:eJx11T1oU1EUwPHgJxRxsNV8vOdLUoitg7U1Wq0hydFqk2hbaacHdtCAdVQR
+FKqgIB0KQlcrWIcK3cSxo9avperoA6ci1EEdRCLqZN49597LuQcfZPil/+Td
+j3fTfPPK5KXNiUSi0H5tab82tV+f5i5uXL+7FSZXgtmvExko3FhM37/TIfzk
+arnj41IGdK/9/VX/z6Hnu+Blq3dqfjUDnaUPO95Udwurr1vxTM+9B+ZX4w94
+1Kf/Y9/ptQP4NhF/owdzjy5v+/w4JzylPmB77ZvNB3/8C3mar099t/C0umzP
+XYB3a/GVoX6fcHux2ivmmZ77AM0nSX2f8K94OVtJ03MfhPWZrqe19SS8fl+8
+9+NcvzCON2V67dLA2u2dzwZovinqDwnHuxXM2p7b/h37onBWvZE2PXcRAjL2
+h4Vxv2zPfQTUcvTqflDY7bkH4TwZ+6PCbs/t9seE3Z7b7YeE3Z7b7Y8Luz23
+25eE3Z67TOdd73dFGM9jyvTcFUioS9+vKozPc9r03FUaTwaaXxZe/O4B4bie
+6fJMr72Ymq5sD0/QefSxX5Yuqzd803OfhCX6PcReWv8e6p57mM6j7qXxvNue
+ORqGTpoPzveUMK6HZ3rm8DS06PvwftLX1IRtzz1ixoO9NJ532zNHI2Y/cLw1
+Ybyfb3rmsAYPF+JL75c0/r+yPXfdGHtpnM9e0zNHddqvgMbbEMbnNTA9c9ig
+54H6ZWlcr6zpmaMG3FILlqX7nRFWy9mXMz33WTqPeryjwvvVA2N75nCUzkOO
+xitdjyf81vbcY3Te89RL437mTc8cjdF6Ud8zLqzW46/tmcNx3K8NfT9pXO9u
+02v/A0Ds9e8=
+         "]]}}, {
+       Directive[
+        AbsoluteThickness[1], 
+        EdgeForm[None], 
+        RGBColor[0.7, 0.1, 0]], {{Antialiasing -> False, 
+         Directive[
+          AbsoluteThickness[1], 
+          EdgeForm[None]], 
+         Line[CompressedData["
+1:eJx11D9sUkEcB/AXu7HapDzeE6RxQGNMELv1pVepQIqmhcWFyaSu4touDO3a
+znVwwbUsDmWmq66yygxDF53lfv++HgkvIS+f3HH3vd/dvfKHT92TjSiKXi1/
+D+THz/1e6WLeGRcLTv2RHvjLtX8S888f/tH2yG2OmrPTTbg7Li5HhKl5BF9N
+/lR6V+rU3VB7YuY8qfn3qZ8BvqT/q5+4Hg2YmL/1s9x0CHN+9G/56Zrqiswf
+m0crflnzT2Ku0ITqZzJ+3vyXOsCLji9IbKbpZ+rnjso13lprfqP/dOgXqONX
+HcWrwbw+OMxXlf1R77g55YNzNEFspr9fw1SepnpX8ubNi2C8XcfnCf15f9WZ
+1DtvDsfLVvJkYX0Hzv2iehTMwXlYmuJ0UvMJ5dH923fnVACY6wvfUp7UzOdF
+/Vr6F9aa86B/9/88UV3WE5vD+1OXesLB+IMD95AKmJg/++Pfh/m+rHH0Ru5L
+wcz1RvsZXXCYhs/UjZV8DXmjPaxnw/H3Q92SvKmZjscFzOf30Yp1Pw/dnV/O
+pGTm+/DYzG+Y8rwXR23JVzLzfsD8vUJ/zqfjtWU9RfNT2vBS2P4W/Sl/rOO9
+47zfYV4PzOenbOa3+kjywbwemI7Hi20zv8WDI6lX2Uz38yvM+43+nE/HP5Z6
+wmGeY/newfr/fyrglSM=
+          "]]}, 
+        Polygon[CompressedData["
+1:eJxl1U9IFFEcwPHJokDCywbNv3S3P4yWB2X1ELvb/ixtxa02vTgHD7KgQpfs
+oiBChzAIIq+t0HYw8JTUIdhjaXXa8uhcJchDdggrjIKaee/33uPXb2AOH/bL
+vHl/RjPV22NThy3LcuP7SHy3xPet4H5t69Dn4odmcrlQ3stn7b/fmafF5YLq
+lV+lNpu71u/i8saPzollF87N1Z2Hd1vgf4812pe+jJpe+evbnv2Lr114JHof
+Urmt4++Lp5g74rrR7uteeb76+Jc/eQaGdxZOrJd8ePBk5uinp2eZn80WWrdX
+Pd1TBxAPFo/oYd/JvF5KHujonroLxHA7DvbnmX+KB9q6p74A26vJC9nYdzOL
+5Wqc1L1yrre52PaiB9fXhncfs/e+VXqZ5XrYuqfuAzGdkoN9P3OreCFH99Q5
+3A/V55n3RpMXsnVPndfrIfsCs5yv6ZXr9vSlYyHAlDiPHlR3a28O1rjFdk54
+uieOAJ6LCfuyDwaY5X6YnnoA11v1l5ll7+qe2vwu+yvM6ntRPXE4iN+Lmi/3
+neS4z3q6J44GQbCAfTDELPfb9NRDIP9eqP4qsyUu01OXYKWWXGq9hpnFcVry
+dU8cjsj1Gk/jfLmz4krrnjgawedhH5SZ5Xns0D1xWJbv66jxuLvEgTM9cXQN
+1yOD411n3ky2cyOte+ob2J/GvsIsz1NG98RhBZ+H461xi++5bnriyPQv95uT
+f1I3meX/A9Mr/wNqZ8BJ
+         "]]}}, {
+       EdgeForm[
+        Thickness[0.001]], {Antialiasing -> False, 
+        Directive[
+         AbsoluteThickness[1], 
+         EdgeForm[None]], 
+        Line[{{{4., 6.66}, {4., 6.66}}, {{4., 6.66}, {4., 6.66}}}]}, 
+       Polygon[{{{3.6877210615650546`, 6.66}, {4.312278938434946, 6.66}, {
+        4.312278938434946, 6.66}, {3.6877210615650546`, 
+        6.66}}}]}}, {}, {}}, {}, {}}, 
+   System`TradingChartDump`$indicatorpos$4453 = 
+   System`TradingChartDump`$staticindicatorpos$4453, 
+   System`TradingChartDump`$length$4453 = 64, 
+   System`TradingChartDump`$gridlinesflag$4453 = True, 
+   System`TradingChartDump`$opens$4453 = {
+   1 -> 6.7`3., 2 -> 6.64`3., 3 -> 6.58`3., 4 -> 6.66`3., 5 -> 6.69`3., 6 -> 
+    6.89`3., 7 -> 7.14`3., 8 -> 6.98`3., 9 -> 7.08`3., 10 -> 7.07`3., 11 -> 
+    6.7`3., 12 -> 6.79`3., 13 -> 6.47`3., 14 -> 6.21`3., 15 -> 5.89`3., 16 -> 
+    5.97`3., 17 -> 6.08`3., 18 -> 6.08`3., 19 -> 6.13`3., 20 -> 6.28`3., 21 -> 
+    6.32`3., 22 -> 6.29`3., 23 -> 6.34`3., 24 -> 6.34`3., 25 -> 6.34`3., 26 -> 
+    6.34`3., 27 -> 6.34`3., 28 -> 6.28`3., 29 -> 6.24`3., 30 -> 6.19`3., 31 -> 
+    6.25`3., 32 -> 6.59`3., 33 -> 6.85`3., 34 -> 7.17`3., 35 -> 7.01`3., 36 -> 
+    7.08`3., 37 -> 6.66`3., 38 -> 6.71`3., 39 -> 6.6`3., 40 -> 6.77`3., 41 -> 
+    6.89`3., 42 -> 6.81`3., 43 -> 6.74`3., 44 -> 6.95`3., 45 -> 6.74`3., 46 -> 
+    6.77`3., 47 -> 7.15`3., 48 -> 7.15`3., 49 -> 7.16`3., 50 -> 7.6`3., 51 -> 
+    7.69`3., 52 -> 7.87`3., 53 -> 8.17`3., 54 -> 8.26`3., 55 -> 8.05`3., 56 -> 
+    7.73`3., 57 -> 8.12`3., 58 -> 8.5`3., 59 -> 8.5`3., 60 -> 8.88`3., 61 -> 
+    8.95`3., 62 -> 9.`3., 63 -> 8.88`3., 64 -> 8.88`3.}, 
+   System`TradingChartDump`$highs$4453 = {
+   1 -> 6.9`3., 2 -> 6.67`3., 3 -> 6.67`3., 4 -> 6.66`3., 5 -> 6.97`3., 6 -> 
+    7.24`3., 7 -> 7.22`3., 8 -> 7.13`3., 9 -> 7.14`3., 10 -> 7.15`3., 11 -> 
+    6.93`3., 12 -> 6.8`3., 13 -> 6.48`3., 14 -> 6.25`3., 15 -> 6.05`3., 16 -> 
+    6.22`3., 17 -> 6.15`3., 18 -> 6.16`3., 19 -> 6.36`3., 20 -> 6.38`3., 21 -> 
+    6.4`3., 22 -> 6.38`3., 23 -> 6.34`3., 24 -> 6.34`3., 25 -> 6.34`3., 26 -> 
+    6.34`3., 27 -> 6.34`3., 28 -> 6.35`3., 29 -> 6.26`3., 30 -> 6.29`3., 31 -> 
+    6.48`3., 32 -> 6.79`3., 33 -> 7.08`3., 34 -> 7.18`3., 35 -> 7.17`3., 36 -> 
+    7.09`3., 37 -> 6.82`3., 38 -> 6.73`3., 39 -> 6.78`3., 40 -> 6.94`3., 41 -> 
+    6.89`3., 42 -> 6.87`3., 43 -> 6.88`3., 44 -> 6.96`3., 45 -> 6.83`3., 46 -> 
+    7.12`3., 47 -> 7.43`3., 48 -> 7.4`3., 49 -> 7.49`3., 50 -> 7.86`3., 51 -> 
+    7.94`3., 52 -> 8.17`3., 53 -> 8.25`3., 54 -> 8.28`3., 55 -> 8.15`3., 56 -> 
+    8.18`3., 57 -> 8.46`3., 58 -> 8.68`3., 59 -> 8.8`3., 60 -> 9.24`3., 61 -> 
+    9.28`3., 62 -> 9.09`3., 63 -> 9.12`3., 64 -> 8.94`3.}, 
+   System`TradingChartDump`$lows$4453 = {
+   1 -> 6.53`3., 2 -> 6.52`3., 3 -> 6.53`3., 4 -> 6.66`3., 5 -> 6.68`3., 6 -> 
+    6.89`3., 7 -> 6.92`3., 8 -> 6.95`3., 9 -> 7.03`3., 10 -> 6.84`3., 11 -> 
+    6.7`3., 12 -> 6.42`3., 13 -> 6.15`3., 14 -> 5.93`3., 15 -> 5.66`3., 16 -> 
+    5.93`3., 17 -> 6.05`3., 18 -> 6.03`3., 19 -> 6.12`3., 20 -> 6.26`3., 21 -> 
+    6.23`3., 22 -> 6.28`3., 23 -> 6.34`3., 24 -> 6.34`3., 25 -> 6.34`3., 26 -> 
+    6.34`3., 27 -> 6.34`3., 28 -> 6.18`3., 29 -> 6.17`3., 30 -> 6.17`3., 31 -> 
+    6.2`3., 32 -> 6.59`3., 33 -> 6.71`3., 34 -> 6.88`3., 35 -> 6.92`3., 36 -> 
+    6.71`3., 37 -> 6.64`3., 38 -> 6.49`3., 39 -> 6.51`3., 40 -> 6.74`3., 41 -> 
+    6.77`3., 42 -> 6.66`3., 43 -> 6.64`3., 44 -> 6.73`3., 45 -> 6.71`3., 46 -> 
+    6.77`3., 47 -> 7.1`3., 48 -> 7.11`3., 49 -> 7.16`3., 50 -> 7.55`3., 51 -> 
+    7.61`3., 52 -> 7.75`3., 53 -> 7.94`3., 54 -> 7.96`3., 55 -> 7.7`3., 56 -> 
+    7.72`3., 57 -> 8.02`3., 58 -> 8.35`3., 59 -> 8.45`3., 60 -> 8.65`3., 61 -> 
+    8.85`3., 62 -> 8.78`3., 63 -> 8.6`3., 64 -> 8.67`3.}, 
+   System`TradingChartDump`$closes$4453 = {
+   1 -> 6.6`3., 2 -> 6.58`3., 3 -> 6.66`3., 4 -> 6.66`3., 5 -> 6.93`3., 6 -> 
+    7.14`3., 7 -> 7.03`3., 8 -> 7.09`3., 9 -> 7.1`3., 10 -> 6.91`3., 11 -> 
+    6.76`3., 12 -> 6.42`3., 13 -> 6.24`3., 14 -> 5.93`3., 15 -> 5.99`3., 16 -> 
+    6.1`3., 17 -> 6.07`3., 18 -> 6.13`3., 19 -> 6.28`3., 20 -> 6.34`3., 21 -> 
+    6.26`3., 22 -> 6.34`3., 23 -> 6.34`3., 24 -> 6.34`3., 25 -> 6.34`3., 26 -> 
+    6.34`3., 27 -> 6.34`3., 28 -> 6.23`3., 29 -> 6.18`3., 30 -> 6.23`3., 31 -> 
+    6.47`3., 32 -> 6.77`3., 33 -> 6.84`3., 34 -> 6.96`3., 35 -> 7.06`3., 36 -> 
+    6.71`3., 37 -> 6.69`3., 38 -> 6.58`3., 39 -> 6.74`3., 40 -> 6.84`3., 41 -> 
+    6.86`3., 42 -> 6.76`3., 43 -> 6.86`3., 44 -> 6.75`3., 45 -> 6.78`3., 46 -> 
+    7.11`3., 47 -> 7.16`3., 48 -> 7.13`3., 49 -> 7.49`3., 50 -> 7.72`3., 51 -> 
+    7.78`3., 52 -> 8.09`3., 53 -> 8.1`3., 54 -> 7.99`3., 55 -> 7.79`3., 56 -> 
+    8.08`3., 57 -> 8.39`3., 58 -> 8.38`3., 59 -> 8.8`3., 60 -> 8.99`3., 61 -> 
+    9.06`3., 62 -> 8.92`3., 63 -> 8.81`3., 64 -> 8.78`3.}, 
+   System`TradingChartDump`$fastpos$4453 = True, 
+   System`TradingChartDump`$gridlines$4453 = {Automatic, Automatic}, 
+   System`TradingChartDump`$subplotgridlines$4453, 
+   System`TradingChartDump`$plotrangemin$4453 = 5.479, 
+   System`TradingChartDump`$plotrangemax$4453 = 9.642, 
+   System`TradingChartDump`$layoutData$4453, 
+   System`TradingChartDump`$gridlinesscope$4453 = {"MonthNameShort"}, 
+   System`TradingChartDump`$axes$4453 = {True, True}, 
+   System`TradingChartDump`$indicators$4453 = {}, 
+   System`TradingChartDump`$mouseQ$4453 = False, 
+   System`TradingChartDump`$modelData$4453 = 
+   System`TradingChartDump`modelData$3430, System`TradingChartDump`$sy$4453 = 
+   Identity, System`TradingChartDump`$isy$4453 = Identity, 
+   System`TradingChartDump`$appearance$4453 = Automatic, 
+   System`TradingChartDump`$perfgoal$4453 = "Quality", 
+   System`TradingChartDump`$axesorigin$4453 = Automatic, 
+   System`TradingChartDump`$framestyle$4453 = {{
+     Directive[], 
+     Directive[]}, {
+     Directive[], 
+     Directive[]}}, System`TradingChartDump`$frameticksstyle$4453 = {{
+     Directive[], 
+     Directive[]}, {
+     Directive[], 
+     Directive[]}}, System`TradingChartDump`$labelstyle$4453 = {
+    GrayLevel[0.4], FontFamily -> "Arial"}, 
+   System`TradingChartDump`$tickstextstyle$4453 = {
+    Directive[
+     GrayLevel[0.4], FontFamily -> "Arial"], 
+    Directive[
+     GrayLevel[0.4], FontFamily -> "Arial"]}, 
+   System`TradingChartDump`$textstyle$4453 = Directive[
+    GrayLevel[0.4], FontFamily -> "Arial"], 
+   System`TradingChartDump`$staticindicatorpos$4453, 
+   System`TradingChartDump`$newgridlines$4453 = {{{3.5, {}}, {25.5, {}}, {
+     45.5, {}}, {3.5, 
+      Directive[
+       Opacity[0.4], 
+       Dashing[{}]]}}, FindDivisions[{5.479, #2}, 6]& }, 
+   System`TradingChartDump`$defaultframeticksstyle$4453 = {{
+    "GraphicsFrameTicks", "GraphicsFrameTicks"}, {
+    "GraphicsFrameTicks", "GraphicsFrameTicks"}}, 
+   System`TradingChartDump`$defaultlabelstyle$4453 = "GraphicsLabel", 
+   System`TradingChartDump`$defaultframestyle$4453 = {{
+    "GraphicsFrame", "GraphicsFrame"}, {"GraphicsFrame", "GraphicsFrame"}}, 
+   System`TradingChartDump`$frame$4453 = {{True, True}, {True, True}}, 
+   System`TradingChartDump`$frameticks$4453 = {{None, Automatic}, {
+    Automatic, None}}, System`TradingChartDump`$basestyle$4453 = Directive[], 
+   System`TradingChartDump`$indicatorstyle$4453 = {
+    RGBColor[0.4947336, 0.6054231999999999, 0.7678384], 
+    RGBColor[0.880722, 0.611041, 0.142051], 
+    RGBColor[0.560181, 0.691569, 0.194885], 
+    RGBColor[0.922526, 0.385626, 0.209179], 
+    RGBColor[0.528488, 0.470624, 0.701351], 
+    RGBColor[0.772079, 0.431554, 0.102387], 
+    RGBColor[0.363898, 0.618501, 0.782349], 
+    RGBColor[1, 0.75, 0], 
+    RGBColor[0.647624, 0.37816, 0.614037], 
+    RGBColor[0.571589, 0.586483, 0.], 
+    RGBColor[0.915, 0.3325, 0.2125], 
+    RGBColor[0.40082222609352647`, 0.5220066643438841, 0.85], 
+    RGBColor[0.9728288904374106, 0.621644452187053, 0.07336199581899142], 
+    RGBColor[0.736782672705901, 0.358, 0.5030266573755369], 
+    RGBColor[0.28026441037696703`, 0.715, 0.4292089322474965]}, 
+   System`TradingChartDump`$axesstyle$4453 = {
+    Directive[], 
+    Directive[]}, System`TradingChartDump`$ticksstyle$4453 = {
+    Directive[], 
+    Directive[]}, System`TradingChartDump`$dateaxisgap$4453 = Offset[15], 
+   System`TradingChartDump`$subplotgap$4453 = 1.5}, {
+    DynamicBox[Typeset`ToBoxes[
+     If[System`TradingChartDump`$highlightposition$4453 =!= Automatic, 
+        System`TradingChartDump`$staticindicatorpos$4453 = 
+         Switch[System`TradingChartDump`$highlightposition$4453, 
+           Alternatives["Left", Left], 
+           Clip[
+            Ceiling[System`TradingChartDump`$controlmin$4453], {
+            1, System`TradingChartDump`$length$4453}], 
+           Alternatives["Right", Right], 
+           Clip[
+            Ceiling[System`TradingChartDump`$controlmax$4453], {
+            1, System`TradingChartDump`$length$4453}], 
+           Blank[], 
+           Last[
+            Flatten[
+             Position[System`TradingChartDump`$dates$4453, 
+              Charting`nearestDate[
+              System`TradingChartDump`$dates$4453, 
+               System`TradingChartDump`$highlightposition$4453, 
+               Part[
+               System`TradingChartDump`$dates$4453, 
+                Floor[System`TradingChartDump`$controlmin$4453] + 1], 
+               Part[System`TradingChartDump`$dates$4453, 
+                Floor[System`TradingChartDump`$controlmax$4453]], 
+               Automatic]]]]]; Null]; 
+      System`TradingChartDump`$fastpos$4453 = First[
+         MousePosition[{"Graphics", Graphics}, {True, 0}]]; 
+      System`TradingChartDump`$indicatorpos$4453 = 
+       If[System`TradingChartDump`$fastpos$4453 =!= True, 
+         System`TradingChartDump`$fastpos$4453 = 
+          Clip[System`TradingChartDump`$fastpos$4453, {0, 100}] - 0.5; 
+         System`TradingChartDump`$fastpos$4453 = (
+             Floor[System`TradingChartDump`$controlmax$4453] - Floor[
+             System`TradingChartDump`$controlmin$4453]) 
+            System`TradingChartDump`$fastpos$4453/100 + 
+           Floor[System`TradingChartDump`$controlmin$4453]; Clip[
+           Ceiling[System`TradingChartDump`$fastpos$4453], {
+           Floor[System`TradingChartDump`$controlmin$4453] + 1, 
+            Floor[System`TradingChartDump`$controlmax$4453]}], 
+         System`TradingChartDump`$staticindicatorpos$4453]; 
+      System`TradingChartDump`$mouseQ$4453 = Or[
+         Not[
+          TrueQ[System`TradingChartDump`$fastpos$4453]], 
+         System`TradingChartDump`$highlightposition$4453 =!= Automatic]; 
+      System`TradingChartDump`$ohlcpoint$4453 = If[
+         And[
+         System`TradingChartDump`$bouncingballQ$4453, 
+          System`TradingChartDump`$mouseQ$4453, 
+          System`TradingChartDump`$appearance$4453 =!= None], 
+         Dynamic[
+          Point[
+           FEPrivate`Part[
+            System`TradingChartDump`$layoutData$4453["MainChartPoints"], 
+            System`TradingChartDump`$indicatorpos$4453]]], {}]; Table[
+        With[{System`TradingChartDump`i$ = System`TradingChartDump`l}, 
+         System`TradingChartDump`$overlaypoint$4453[
+          System`TradingChartDump`i$] = 
+         If[System`TradingChartDump`$mouseQ$4453, 
+           Dynamic[
+            Point[
+             FEPrivate`Part[
+              System`TradingChartDump`$layoutData$4453[
+              "OverlayIndicatorPoints", {System`TradingChartDump`i$}], 
+              System`TradingChartDump`$indicatorpos$4453]]], {}]], {
+        System`TradingChartDump`l, 
+         Length[
+          System`TradingChartDump`$layoutData$4453[
+          "OverlayIndicatorNames"]]}]; Table[
+        With[{System`TradingChartDump`i$ = System`TradingChartDump`i}, 
+         Table[
+          
+          With[{System`TradingChartDump`k$ = System`TradingChartDump`k}, 
+           System`TradingChartDump`$overlayvalue$4453[
+            System`TradingChartDump`i$, System`TradingChartDump`k$] = 
+           If[System`TradingChartDump`$mouseQ$4453, 
+             NumberForm[
+              Part[
+               System`TradingChartDump`$layoutData$4453[
+               "OverlayIndicatorValues", {System`TradingChartDump`i$}], 
+               System`TradingChartDump`$indicatorpos$4453, 
+               System`TradingChartDump`k$], {
+              System`TradingChartDump`$ndigits$4453, 2}, 
+              NumberPadding -> {" ", "0"}], {}]], {System`TradingChartDump`k, 
+           Length[
+            System`TradingChartDump`$layoutData$4453[
+            "OverlayIndicatorLegends", {System`TradingChartDump`i$}]]}]], {
+        System`TradingChartDump`i, 
+         Length[
+          System`TradingChartDump`$layoutData$4453[
+          "OverlayIndicatorNames"]]}]; 
+      System`TradingChartDump`$overlaylegends = Inset[
+         Style[
+          Row[
+           Table[
+            With[{System`TradingChartDump`i$ = System`TradingChartDump`i}, 
+             Row[
+              Prepend[
+               Riffle[
+                Table[
+                 Row[{
+                   Style[
+                    Part[
+                    System`TradingChartDump`$layoutData$4453[
+                    "OverlayIndicatorLegends", {System`TradingChartDump`i$}], 
+                    System`TradingChartDump`k], 
+                    System`TradingChartDump`$textstyle$4453, FontFamily -> 
+                    "Times"], 
+                   If[Length[
+                    System`TradingChartDump`$layoutData$4453[
+                    "OverlayIndicatorParameters", {
+                    System`TradingChartDump`i$}]] >= 
+                    System`TradingChartDump`k, 
+                    If[Length[
+                    Flatten[
+                    Part[
+                    System`TradingChartDump`$layoutData$4453[
+                    "OverlayIndicatorParameters", {
+                    System`TradingChartDump`i$}], 
+                    System`TradingChartDump`k]]] =!= 0, 
+                    Style[
+                    Row[{"(", 
+                    Apply[Sequence, 
+                    Riffle[
+                    Table[
+                    Part[
+                    Flatten[
+                    Part[
+                    System`TradingChartDump`$layoutData$4453[
+                    "OverlayIndicatorParameters", {
+                    System`TradingChartDump`i$}], System`TradingChartDump`k]],
+                     System`TradingChartDump`m], {System`TradingChartDump`m, 
+                    Length[
+                    Part[
+                    System`TradingChartDump`$layoutData$4453[
+                    "OverlayIndicatorParameters", {
+                    System`TradingChartDump`i$}], 
+                    System`TradingChartDump`k]]}], ", "]], ")", ":"}], 
+                    System`TradingChartDump`$textstyle$4453, FontFamily -> 
+                    "Times"], 
+                    Style[":", System`TradingChartDump`$textstyle$4453]], 
+                    Style[":", System`TradingChartDump`$textstyle$4453]], 
+                   
+                   With[{System`TradingChartDump`k$ = 
+                    System`TradingChartDump`k}, 
+                    Dynamic[
+                    Style[
+                    System`TradingChartDump`$overlayvalue$4453[
+                    System`TradingChartDump`i$, System`TradingChartDump`k$], 
+                    System`TradingChartDump`$textstyle$4453]]]}], {
+                 System`TradingChartDump`k, 
+                  Length[
+                   System`TradingChartDump`$layoutData$4453[
+                   "OverlayIndicatorLegends", {
+                    System`TradingChartDump`i$}]]}], " "], "  "]]], {
+            System`TradingChartDump`i, 
+             Length[
+              System`TradingChartDump`$layoutData$4453[
+              "OverlayIndicatorNames"]]}], ImageSize -> {300, Automatic}, 
+           ImageMargins -> {{0, 0}, {5, 5}}, Alignment -> {Left, Center}], 
+          LineIndent -> 0], 
+         Scaled[{0, 1}], {Left, Top}, {
+         System`TradingChartDump`$length$4453, Automatic}, Alignment -> Left, 
+         Background -> System`TradingChartDump`$timestampstyle$4453]; Table[
+        With[{System`TradingChartDump`i$ = System`TradingChartDump`i}, 
+         Table[
+          
+          With[{System`TradingChartDump`k$ = System`TradingChartDump`k}, 
+           System`TradingChartDump`$subplotvalue$4453[
+            System`TradingChartDump`i$, System`TradingChartDump`k$] = 
+           If[System`TradingChartDump`$mouseQ$4453, 
+             NumberForm[
+              Part[
+               System`TradingChartDump`$layoutData$4453[
+               "SubplotIndicatorValues", {System`TradingChartDump`i$}], 
+               System`TradingChartDump`$indicatorpos$4453, 
+               System`TradingChartDump`k$], {
+              System`TradingChartDump`$ndigits$4453, 2}, 
+              NumberPadding -> {" ", "0"}, 
+              ExponentFunction -> (If[-3 < # < 3, Null, 3 Quotient[#, 3]]& )], 
+             Invisible[
+              Part[
+               System`TradingChartDump`$layoutData$4453[
+               "SubplotIndicatorValues", {System`TradingChartDump`i$}], -1, 
+               System`TradingChartDump`k$]]]], {System`TradingChartDump`k, 
+           Length[
+            System`TradingChartDump`$layoutData$4453[
+            "SubplotIndicatorLegends", {System`TradingChartDump`i$}]]}]], {
+        System`TradingChartDump`i, 
+         Length[
+          System`TradingChartDump`$layoutData$4453[
+          "SubplotIndicatorNames"]]}]; Table[
+        With[{System`TradingChartDump`i$ = System`TradingChartDump`i}, 
+         System`TradingChartDump`$layoutData$4453[
+           "SubplotPoints", {System`TradingChartDump`i$}] = DeleteCases[
+            Part[
+             System`TradingChartDump`$layoutData$4453[
+             "SubplotIndicatorValues", {System`TradingChartDump`i$}], 
+             Span[
+              Max[
+               Floor[System`TradingChartDump`$controlmin$4453], 1], 
+              Floor[System`TradingChartDump`$controlmax$4453]]], "", 
+            Infinity]; 
+         System`TradingChartDump`$min$4453[System`TradingChartDump`i$] = 
+          ReplaceAll[
+            Min[
+             System`TradingChartDump`$layoutData$4453[
+             "SubplotPoints", {System`TradingChartDump`i$}]], 
+            Alternatives[Infinity, -Infinity] -> 0]; 
+         System`TradingChartDump`$max$4453[System`TradingChartDump`i$] = 
+          ReplaceAll[
+            Max[
+             System`TradingChartDump`$layoutData$4453[
+             "SubplotPoints", {System`TradingChartDump`i$}]], 
+            Alternatives[Infinity, -Infinity] -> 0]; 
+         If[System`TradingChartDump`$min$4453[System`TradingChartDump`i$] == 
+           System`TradingChartDump`$max$4453[System`TradingChartDump`i$] == 
+           0., System`TradingChartDump`$min$4453[System`TradingChartDump`i$] = 
+            0; System`TradingChartDump`$max$4453[System`TradingChartDump`i$] = 
+            1]; If[System`TradingChartDump`$min$4453[
+            System`TradingChartDump`i$] == 
+           System`TradingChartDump`$max$4453[System`TradingChartDump`i$], 
+           System`TradingChartDump`$min$4453[System`TradingChartDump`i$] = 
+            System`TradingChartDump`$min$4453[System`TradingChartDump`i$] - 
+             0.1 Abs[
+               System`TradingChartDump`$min$4453[System`TradingChartDump`i$]]; 
+           System`TradingChartDump`$max$4453[System`TradingChartDump`i$] = 
+            System`TradingChartDump`$max$4453[System`TradingChartDump`i$] + 
+             0.1 Abs[
+                System`TradingChartDump`$max$4453[
+                System`TradingChartDump`i$]]]; 
+         System`TradingChartDump`$subplotrect$4453[
+           System`TradingChartDump`i$] = If[
+            And[
+            System`TradingChartDump`$timestampQ$4453, 
+             System`TradingChartDump`$mouseQ$4453], 
+            
+            Rectangle[{
+             System`TradingChartDump`$indicatorpos$4453 - 0.5, 
+              System`TradingChartDump`$min$4453[System`TradingChartDump`i$] - 
+              0.15 Abs[
+               System`TradingChartDump`$max$4453[System`TradingChartDump`i$] - 
+                System`TradingChartDump`$min$4453[
+                System`TradingChartDump`i$]]}, 
+             If[System`TradingChartDump`$timestampdepth$4453 === "Full", 
+              
+              Scaled[{0, 0}, {
+               System`TradingChartDump`$indicatorpos$4453 + 0.5, 
+                System`TradingChartDump`$max$4453[System`TradingChartDump`i$] + 
+                0.5 Abs[
+                  System`TradingChartDump`$max$4453[
+                    System`TradingChartDump`i$] - 
+                   System`TradingChartDump`$min$4453[
+                   System`TradingChartDump`i$]]}], 
+              Offset[{0, 
+                Part[System`TradingChartDump`$timestampdepth$4453, 1]}, {
+               System`TradingChartDump`$indicatorpos$4453 + 0.5, 
+                System`TradingChartDump`$min$4453[System`TradingChartDump`i$] - 
+                0.15 Abs[
+                 System`TradingChartDump`$max$4453[
+                   System`TradingChartDump`i$] - 
+                  System`TradingChartDump`$min$4453[
+                  System`TradingChartDump`i$]]}]]], {}]; 
+         System`TradingChartDump`$subplotpoint$4453[
+           System`TradingChartDump`i$] = If[
+            And[
+            System`TradingChartDump`$bouncingballQ$4453, 
+             System`TradingChartDump`$mouseQ$4453, 
+             System`TradingChartDump`$appearance$4453 =!= None], 
+            Dynamic[
+             Point[
+              FEPrivate`Part[
+               System`TradingChartDump`$layoutData$4453[
+               "SubplotIndicatorPoints", {System`TradingChartDump`i$}], 
+               System`TradingChartDump`$indicatorpos$4453]]], {}]; 
+         System`TradingChartDump`$subplotgridlines$4453[
+           System`TradingChartDump`i$] = 
+          System`TradingChartDump`$layoutData$4453[
+           "SubplotIndicatorGridLines", {System`TradingChartDump`i$}]; 
+         Null], {System`TradingChartDump`i, 
+         Length[
+          System`TradingChartDump`$layoutData$4453[
+          "SubplotIndicatorNames"]]}]; 
+      System`TradingChartDump`$ohlclabel$4453 = Grid[{{
+           Style[
+           "O: ", 12, System`TradingChartDump`$textstyle$4453, FontFamily -> 
+            "Times", LineBreakWithin -> False], 
+           Style[
+            Dynamic[
+             ReplaceAll[System`TradingChartDump`$indicatorpos$4453, 
+              Dispatch[System`TradingChartDump`$opens$4453]]], 12, 
+            System`TradingChartDump`$textstyle$4453, FontFamily -> "Times"], 
+           Style[
+           "H: ", 12, System`TradingChartDump`$textstyle$4453, FontFamily -> 
+            "Times", LineBreakWithin -> False], 
+           Style[
+            Dynamic[
+             ReplaceAll[System`TradingChartDump`$indicatorpos$4453, 
+              Dispatch[System`TradingChartDump`$highs$4453]]], 12, 
+            System`TradingChartDump`$textstyle$4453, FontFamily -> "Times"], 
+           Style[
+           "L: ", 12, System`TradingChartDump`$textstyle$4453, FontFamily -> 
+            "Times", LineBreakWithin -> False], 
+           Style[
+            Dynamic[
+             ReplaceAll[System`TradingChartDump`$indicatorpos$4453, 
+              Dispatch[System`TradingChartDump`$lows$4453]]], 12, 
+            System`TradingChartDump`$textstyle$4453, FontFamily -> "Times"], 
+           Style[
+           "C: ", 12, System`TradingChartDump`$textstyle$4453, FontFamily -> 
+            "Times", LineBreakWithin -> False], 
+           Style[
+            Dynamic[
+             ReplaceAll[System`TradingChartDump`$indicatorpos$4453, 
+              Dispatch[System`TradingChartDump`$closes$4453]]], 12, 
+            System`TradingChartDump`$textstyle$4453, FontFamily -> "Times"], 
+           Style[
+            Dynamic[
+             ReplaceAll[System`TradingChartDump`$indicatorpos$4453, 
+              Dispatch[System`TradingChartDump`$visdates$4453]]], 12, 
+            System`TradingChartDump`$textstyle$4453, FontFamily -> "Times", 
+            LineBreakWithin -> False]}}, ItemSize -> Automatic, 
+         Spacings -> {{0, 0, 1, 0, 1, 0, 1, 0, 1, 0}, 0}, Frame -> False]; {},
+       StandardForm, Graphics],
+     ImageSizeCache->{{4.503599627370496*^15, -4.503599627370496*^15}, {
+      4.503599627370496*^15, -4.503599627370496*^15}},
+     TrackedSymbols:>{}], 
+    DynamicBox[Typeset`ToBoxes[
+      Deploy[
+       Inset[
+        Graphics[{
+          Dynamic[
+           If[
+            And[
+            System`TradingChartDump`$timestampQ$4453, 
+             System`TradingChartDump`$mouseQ$4453], {{
+             System`TradingChartDump`$timestampstyle$4453, 
+              
+              Rectangle[{
+               System`TradingChartDump`$indicatorpos$4453 - 0.5, 
+                System`TradingChartDump`$plotrangemin$4453}, 
+               If[System`TradingChartDump`$timestampdepth$4453 === "Full", 
+                Scaled[{0, 
+                  System`TradingChartDump`$isy$4453[1]}, {
+                 System`TradingChartDump`$indicatorpos$4453 + 0.5, 
+                  System`TradingChartDump`$plotrangemin$4453}], 
+                Offset[{0, 
+                  Part[System`TradingChartDump`$timestampdepth$4453, 1]}, {
+                 System`TradingChartDump`$indicatorpos$4453 + 0.5, 
+                  System`TradingChartDump`$plotrangemin$4453}]]]}}, {}]], 
+          System`TradingChartDump`$candlestickchart$4453, {
+          System`TradingChartDump`$highlightstyle$4453, 
+           Dynamic[System`TradingChartDump`$ohlcpoint$4453]}, 
+          Table[
+           With[{System`TradingChartDump`i$ = System`TradingChartDump`l}, {
+             System`TradingChartDump`$layoutData$4453[
+             "OverlayIndicator", {System`TradingChartDump`i$}], {
+             System`TradingChartDump`$highlightstyle$4453, 
+              Dynamic[
+               System`TradingChartDump`$overlaypoint$4453[
+               System`TradingChartDump`i$]]}}], {System`TradingChartDump`l, 
+            Length[
+             System`TradingChartDump`$layoutData$4453[
+             "OverlayIndicatorNames"]]}], 
+          Dynamic[
+           If[
+            And[System`TradingChartDump`$mouseQ$4453, Length[
+               System`TradingChartDump`$layoutData$4453[
+               "OverlayIndicatorNames"]] =!= 0], 
+            System`TradingChartDump`$overlaylegends, {}], 
+           TrackedSymbols :> {System`TradingChartDump`$mouseQ$4453}]}, 
+         PlotLabel -> None, 
+         PlotRange -> {{
+           Floor[System`TradingChartDump`$controlmin$4453] + 0.5, 
+            Floor[System`TradingChartDump`$controlmax$4453] + 0.5}, {
+           System`TradingChartDump`$plotrangemin$4453, 
+            System`TradingChartDump`$plotrangemax$4453}}, AspectRatio -> Full,
+          Frame -> {
+           Switch[System`TradingChartDump`$axesorigin$4453, Left, {False, 
+             Part[System`TradingChartDump`$frame$4453, 1, 2]}, 
+            Blank[], {
+             Part[System`TradingChartDump`$frame$4453, 1, 1], False}], {False, 
+            Part[System`TradingChartDump`$frame$4453, 2, 2]}}, FrameTicks -> 
+         System`TradingChartDump`$frameticks$4453, Axes -> False, FrameTicks -> 
+         None, GridLines -> System`TradingChartDump`$newgridlines$4453, 
+         ImagePadding -> {{1, 1}, {0, 15}}, PlotRangeClipping -> False, 
+         PlotRangePadding -> None, Epilog -> Deploy[
+           Inset[
+            Dynamic[
+             If[System`TradingChartDump`$mouseQ$4453, 
+              Dynamic[System`TradingChartDump`$ohlclabel$4453], 
+              Text[
+               Spacer[{1, 9}]]], 
+             TrackedSymbols :> {System`TradingChartDump`$mouseQ$4453}], {
+            Left, Top}, {Left, Top}]], System`TradingChartDump`$opts$4453], {
+        0.5, 0}, {Left, Bottom}, {
+        100, System`TradingChartDump`$aspectratio$4453 100}]], StandardForm, 
+      Graphics],
+     ImageSizeCache->{{13.743679561376824`, 
+      546.9145598537922}, {-175.75886291620708`, 153.75886291620708`}}], 
+    TagBox[
+     DynamicBox[Typeset`ToBoxes[
+       Inset[
+        Graphics[{
+          GrayLevel[0.4], 
+          AbsoluteThickness[0.5], {
+           Opacity[0], 
+           
+           Point[{{-0.001, System`TradingChartDump`$plotrangemin$4453}, {
+             0.001, System`TradingChartDump`$plotrangemin$4453 + 0.1}}]}, 
+          System`TradingChartDump`$basestyle$4453, 
+          If[
+          Part[System`TradingChartDump`$defaultframestyle$4453, 1, 2] =!= 
+           "GraphicsFrame", 
+           Part[System`TradingChartDump`$defaultframestyle$4453, 1, 2]], 
+          If[
+           And[
+            Not[
+             Last[System`TradingChartDump`$axes$4453]], 
+            Not[
+             Part[System`TradingChartDump`$frame$4453, 1, 2]]], {}, 
+           
+           Charting`ScaleAxis[{
+            "Line", {{0, System`TradingChartDump`$plotrangemin$4453} -> 
+              System`TradingChartDump`$isy$4453[
+               System`TradingChartDump`$plotrangemin$4453], {
+               0, System`TradingChartDump`$plotrangemax$4453} -> 
+              System`TradingChartDump`$isy$4453[
+               System`TradingChartDump`$plotrangemax$4453]}}, 
+            FindDivisions[{
+              System`TradingChartDump`$isy$4453[
+              System`TradingChartDump`$plotrangemin$4453], 
+              System`TradingChartDump`$isy$4453[
+              System`TradingChartDump`$plotrangemax$4453]}, {6}], 
+            ScalingFunctions -> {
+             System`TradingChartDump`$sy$4453, 
+              System`TradingChartDump`$isy$4453}, Charting`LabelSide -> 
+            Switch[System`TradingChartDump`$axesorigin$4453, Left, 
+              If[
+              System`TradingChartDump`$plotrangemax$4453 > 
+               System`TradingChartDump`$plotrangemin$4453, Left, Right], 
+              Blank[], 
+              If[
+              System`TradingChartDump`$plotrangemax$4453 > 
+               System`TradingChartDump`$plotrangemin$4453, Right, Left]], 
+            Charting`TickSide -> 
+            Switch[System`TradingChartDump`$axesorigin$4453, Left, 
+              If[
+              System`TradingChartDump`$plotrangemax$4453 > 
+               System`TradingChartDump`$plotrangemin$4453, Left, Right], 
+              Blank[], 
+              If[
+              System`TradingChartDump`$plotrangemax$4453 > 
+               System`TradingChartDump`$plotrangemin$4453, Right, Left]], 
+            AxesStyle -> If[
+              Part[System`TradingChartDump`$frame$4453, 1, 2], 
+              Part[System`TradingChartDump`$framestyle$4453, 1, 2], 
+              Part[System`TradingChartDump`$axesstyle$4453, 2]], LabelStyle -> 
+            Part[System`TradingChartDump`$tickstextstyle$4453, 2], TicksStyle -> 
+            If[
+              Part[System`TradingChartDump`$frame$4453, 1, 2], 
+              Part[System`TradingChartDump`$frameticksstyle$4453, 1, 2], 
+              Part[System`TradingChartDump`$ticksstyle$4453, 2]], 
+            Antialiasing -> False, Charting`TickLabels -> 
+            Part[System`TradingChartDump`$frameticks$4453, 1, 2], 
+            Charting`TickMarkers -> 
+            Part[System`TradingChartDump`$frameticks$4453, 1, 2], 
+            If[
+            System`TradingChartDump`$defaultframeticksstyle$4453 =!= 
+             "GraphicsFrameTicks", DefaultTicksStyle -> 
+             Part[System`TradingChartDump`$defaultframeticksstyle$4453, 1, 2],
+              DefaultTicksStyle -> 
+             System`TradingChartDump`$defaultframeticksstyle$4453], 
+            If[
+            System`TradingChartDump`$defaultlabelstyle$4453 =!= 
+             "GraphicsLabel", DefaultLabelStyle -> 
+             Part[System`TradingChartDump`$defaultlabelstyle$4453, 2], 
+             DefaultLabelStyle -> 
+             System`TradingChartDump`$defaultlabelstyle$4453]]]}, 
+         ImagePadding -> {{All, All}, {0, 15}}, PlotRangePadding -> None, 
+         PlotRangeClipping -> False, Frame -> False, Axes -> False, PlotLabel -> 
+         None, ImageSize -> {
+          Automatic, System`TradingChartDump`$aspectratio$4453 100}], 
+        Offset[{
+          Switch[System`TradingChartDump`$axesorigin$4453, Left, 3, 
+           Blank[], -2], 0}, {
+          Switch[System`TradingChartDump`$axesorigin$4453, Left, 0.5, 
+           Blank[], 100.5], 0}], 
+        Switch[
+        System`TradingChartDump`$axesorigin$4453, Left, {Right, Bottom}, 
+         Blank[], {Left, Bottom}], {
+        Automatic, System`TradingChartDump`$aspectratio$4453 100}], 
+       StandardForm, Graphics],
+      ImageSizeCache->{{545., 561.}, {-175.75886291620708`, 
+       153.75886291620708`}}],
+     Deploy,
+     DefaultBaseStyle->"Deploy"], 
+    DynamicBox[Typeset`ToBoxes[
+      Table[
+       With[{System`TradingChartDump`i$ = System`TradingChartDump`i}, {
+         Deploy[
+          Inset[
+           Graphics[{{System`TradingChartDump`$timestampstyle$4453, 
+              Dynamic[
+               System`TradingChartDump`$subplotrect$4453[
+               System`TradingChartDump`i$]]}, 
+             System`TradingChartDump`$layoutData$4453[
+             "SubplotIndicator", {System`TradingChartDump`i$}], {
+             System`TradingChartDump`$highlightstyle$4453, 
+              Dynamic[
+               System`TradingChartDump`$subplotpoint$4453[
+               System`TradingChartDump`i$]]}, 
+             Inset[
+              Dynamic[
+               If[System`TradingChartDump`$mouseQ$4453, 
+                Row[
+                 Prepend[
+                  Riffle[
+                   Table[
+                    Row[{
+                    Style[
+                    Part[
+                    System`TradingChartDump`$layoutData$4453[
+                    "SubplotIndicatorLegends", {System`TradingChartDump`i$}], 
+                    System`TradingChartDump`k], 
+                    System`TradingChartDump`$textstyle$4453, FontFamily -> 
+                    "Times"], 
+                    If[Length[
+                    System`TradingChartDump`$layoutData$4453[
+                    "SubplotIndicatorParameters", {
+                    System`TradingChartDump`i$}]] >= 
+                    System`TradingChartDump`k, 
+                    If[Length[
+                    Flatten[
+                    Part[
+                    System`TradingChartDump`$layoutData$4453[
+                    "SubplotIndicatorParameters", {
+                    System`TradingChartDump`i$}], 
+                    System`TradingChartDump`k]]] =!= 0, 
+                    Style[
+                    Row[{"(", 
+                    Apply[Sequence, 
+                    Riffle[
+                    Table[
+                    Part[
+                    Flatten[
+                    Part[
+                    System`TradingChartDump`$layoutData$4453[
+                    "SubplotIndicatorParameters", {
+                    System`TradingChartDump`i$}], System`TradingChartDump`k]],
+                     System`TradingChartDump`m], {System`TradingChartDump`m, 
+                    Length[
+                    Flatten[
+                    Part[
+                    System`TradingChartDump`$layoutData$4453[
+                    "SubplotIndicatorParameters", {
+                    System`TradingChartDump`i$}], 
+                    System`TradingChartDump`k]]]}], ", "]], ")", ":"}], 
+                    System`TradingChartDump`$textstyle$4453], 
+                    Style[":", System`TradingChartDump`$textstyle$4453]], 
+                    Style[":", System`TradingChartDump`$textstyle$4453]], 
+                    
+                    With[{System`TradingChartDump`k$ = 
+                    System`TradingChartDump`k}, 
+                    Dynamic[
+                    Style[
+                    System`TradingChartDump`$subplotvalue$4453[
+                    System`TradingChartDump`i$, System`TradingChartDump`k$], 
+                    System`TradingChartDump`$textstyle$4453]]]}], {
+                    System`TradingChartDump`k, 
+                    Length[
+                    System`TradingChartDump`$layoutData$4453[
+                    "SubplotIndicatorLegends", {
+                    System`TradingChartDump`i$}]]}], " "], "  "]], ""], 
+               TrackedSymbols :> {System`TradingChartDump`$mouseQ$4453}], 
+              Scaled[{0, 0.95}], {-1, 1}]}, AspectRatio -> Full, 
+            PlotRangeClipping -> True, GridLines -> {
+              Part[System`TradingChartDump`$newgridlines$4453, 1], 
+              If[
+              System`TradingChartDump`$subpricegridlines$4453 === Automatic, 
+               System`TradingChartDump`$subplotgridlines$4453[
+               System`TradingChartDump`i$], 
+               Part[System`TradingChartDump`$newgridlines$4453, 2]]}, Frame -> {
+              Switch[System`TradingChartDump`$axesorigin$4453, Left, {False, 
+                Part[System`TradingChartDump`$frame$4453, 1, 2]}, 
+               Blank[], {
+                Part[System`TradingChartDump`$frame$4453, 1, 1], False}], {
+               If[System`TradingChartDump`i$ == Length[
+                  System`TradingChartDump`$layoutData$4453[
+                  "SubplotIndicatorNames"]], 
+                If[
+                 MatchQ[
+                  N[System`TradingChartDump`$dateaxisgap$4453], 0.], False, 
+                 Part[System`TradingChartDump`$frame$4453, 2, 1]], 
+                If[
+                 MatchQ[
+                  N[System`TradingChartDump`$subplotgap$4453], 0.], False, 
+                 Part[System`TradingChartDump`$frame$4453, 2, 1]]], 
+               Part[System`TradingChartDump`$frame$4453, 2, 2]}}, 
+            ImagePadding -> {{1, 1}, {1, 0}}, FrameTicks -> None, Axes -> 
+            False, PlotLabel -> None, PlotRangePadding -> None, 
+            PlotRange -> {
+             Map[Floor, {
+                System`TradingChartDump`$controlmin$4453, 
+                 System`TradingChartDump`$controlmax$4453}] + 0.5, {
+              System`TradingChartDump`$min$4453[System`TradingChartDump`i$] - 
+               0.15 Abs[
+                System`TradingChartDump`$max$4453[System`TradingChartDump`i$] - 
+                 System`TradingChartDump`$min$4453[
+                 System`TradingChartDump`i$]], 
+               System`TradingChartDump`$max$4453[System`TradingChartDump`i$] + 
+               0.5 Abs[
+                 System`TradingChartDump`$max$4453[
+                   System`TradingChartDump`i$] - 
+                  System`TradingChartDump`$min$4453[
+                  System`TradingChartDump`i$]]}}, 
+            System`TradingChartDump`$opts$4453], 
+           Offset[{0, 
+             (If[Head[#] === Offset, -First[#], 0]& )[
+             System`TradingChartDump`$dateaxisgap$4453]}, {0.5, 
+             ((-System`TradingChartDump`$aspectratio$4453 100/4 - 
+               System`TradingChartDump`$subplotgap$4453) (
+               System`TradingChartDump`i$ - 1) + 
+             If[Head[#] === Offset, 0, -#]& )[
+             System`TradingChartDump`$dateaxisgap$4453]}], {Left, Top}, {
+           100, System`TradingChartDump`$aspectratio$4453 100/4}]], 
+         Deploy[
+          Inset[
+           Graphics[
+            Dynamic[{{
+               Opacity[0], 
+               Point[{{-0.001, 0}, {0.001, 0.01}}]}, 
+              GrayLevel[0.4], 
+              AbsoluteThickness[0.1], System`TradingChartDump`$basestyle$4453, 
+              If[
+              Part[System`TradingChartDump`$defaultframestyle$4453, 1, 2] =!= 
+               "GraphicsFrame", 
+               Part[System`TradingChartDump`$defaultframestyle$4453, 1, 2]], 
+              If[
+               And[
+                Not[
+                 Last[System`TradingChartDump`$axes$4453]], 
+                Not[
+                 Part[System`TradingChartDump`$frame$4453, 1, 2]]], {}, 
+               
+               Charting`ScaleAxis[{
+                "Line", {{0, 0} -> 
+                  System`TradingChartDump`$min$4453[
+                    System`TradingChartDump`i$] - 0.15 
+                   Abs[System`TradingChartDump`$max$4453[
+                    System`TradingChartDump`i$] - 
+                    System`TradingChartDump`$min$4453[
+                    System`TradingChartDump`i$]], {0, 1} -> 
+                  System`TradingChartDump`$max$4453[
+                    System`TradingChartDump`i$] + 
+                   0.5 Abs[
+                    System`TradingChartDump`$max$4453[
+                    System`TradingChartDump`i$] - 
+                    System`TradingChartDump`$min$4453[
+                    System`TradingChartDump`i$]]}}, {
+                 System`TradingChartDump`$subplotgridlines$4453[
+                 System`TradingChartDump`i$]}, Charting`LabelSide -> 
+                Switch[System`TradingChartDump`$axesorigin$4453, Left, Left, 
+                  Blank[], Right], Charting`TickSide -> 
+                Switch[System`TradingChartDump`$axesorigin$4453, Left, Left, 
+                  Blank[], Right], AxesStyle -> If[
+                  Part[System`TradingChartDump`$frame$4453, 1, 2], 
+                  Part[System`TradingChartDump`$framestyle$4453, 1, 2], 
+                  Part[System`TradingChartDump`$axesstyle$4453, 2]], 
+                LabelStyle -> 
+                Part[System`TradingChartDump`$tickstextstyle$4453, 2], 
+                TicksStyle -> If[
+                  Part[System`TradingChartDump`$frame$4453, 1, 2], 
+                  Part[System`TradingChartDump`$frameticksstyle$4453, 1, 2], 
+                  Part[System`TradingChartDump`$ticksstyle$4453, 2]], 
+                Antialiasing -> False, Charting`TickLabels -> 
+                Part[System`TradingChartDump`$frameticks$4453, 1, 2], 
+                Charting`TickMarkers -> 
+                Part[System`TradingChartDump`$frameticks$4453, 1, 2], 
+                If[
+                System`TradingChartDump`$defaultframeticksstyle$4453 =!= 
+                 "GraphicsFrameTicks", DefaultTicksStyle -> 
+                 Part[System`TradingChartDump`$defaultframeticksstyle$4453, 1,
+                    2], DefaultTicksStyle -> 
+                 System`TradingChartDump`$defaultframeticksstyle$4453], 
+                If[
+                System`TradingChartDump`$defaultlabelstyle$4453 =!= 
+                 "GraphicsLabel", DefaultLabelStyle -> 
+                 Part[System`TradingChartDump`$defaultlabelstyle$4453, 2], 
+                 DefaultLabelStyle -> 
+                 System`TradingChartDump`$defaultlabelstyle$4453]]]}, 
+             TrackedSymbols :> {}], ImagePadding -> {{All, All}, {1, 0}}, 
+            PlotRangePadding -> None, PlotRangeClipping -> False, Frame -> 
+            False, Axes -> False, PlotLabel -> None], 
+           Offset[{
+             Switch[System`TradingChartDump`$axesorigin$4453, Left, 3, 
+              Blank[], -2], 
+             (If[Head[#] === Offset, -First[#], 0]& )[
+             System`TradingChartDump`$dateaxisgap$4453]}, {
+             Switch[System`TradingChartDump`$axesorigin$4453, Left, 0.5, 
+              Alternatives[Right, Automatic, 
+               Blank[]], 100.5], 
+             ((-System`TradingChartDump`$aspectratio$4453 100/4 - 
+               System`TradingChartDump`$subplotgap$4453) (
+               System`TradingChartDump`i$ - 1) + 
+             If[Head[#] === Offset, 0, -#]& )[
+             System`TradingChartDump`$dateaxisgap$4453]}], 
+           Switch[
+           System`TradingChartDump`$axesorigin$4453, Left, {Right, Top}, 
+            Blank[], {Left, Top}], {
+           Automatic, System`TradingChartDump`$aspectratio$4453 100/4}]]}], {
+       System`TradingChartDump`i, 
+        Length[
+         System`TradingChartDump`$layoutData$4453["SubplotIndicatorNames"]]}],
+       StandardForm, Graphics],
+     ImageSizeCache->{{4.503599627370496*^15, -4.503599627370496*^15}, {
+      4.503599627370496*^15, -4.503599627370496*^15}},
+     TrackedSymbols:>{}], 
+    TagBox[
+     DynamicBox[Typeset`ToBoxes[{
+        Opacity[0], 
+        Point[
+         Offset[{0, -15}, {
+          0, -System`TradingChartDump`$aspectratio$4453 100 4^(-1) Length[
+             System`TradingChartDump`$layoutData$4453[
+             "SubplotIndicatorNames"]]}]]}, StandardForm, Graphics],
+      ImageSizeCache->{{9.66326530612245, 12.66326530612245}, {
+       167.01772583241416`, 170.01772583241416`}},
+      TrackedSymbols:>{}],
+     Deploy,
+     DefaultBaseStyle->"Deploy"], InsetBox[
+     GraphicsBox[
+      DynamicBox[Typeset`ToBoxes[{
+         GrayLevel[0.1], 
+         AbsoluteThickness[0.5], {
+          Opacity[0], 
+          
+          Point[{{System`TradingChartDump`$controlmin$4453 + 1, 
+             System`TradingChartDump`$plotrangemin$4453 - 0.001}, {
+            System`TradingChartDump`$controlmin$4453 + 1, 
+             System`TradingChartDump`$plotrangemin$4453 + 0.001}}]}, 
+         System`TradingChartDump`$basestyle$4453, 
+         If[
+         Part[System`TradingChartDump`$defaultframestyle$4453, 2, 1] =!= 
+          "GraphicsFrame", 
+          Part[System`TradingChartDump`$defaultframestyle$4453, 2, 1]], 
+         If[
+          And[
+           Not[
+            First[System`TradingChartDump`$axes$4453]], 
+           Not[
+            Part[System`TradingChartDump`$frame$4453, 2, 1]]], {}, 
+          Charting`DateAxis[
+           Take[
+           System`TradingChartDump`$dates$4453, {1, 0} + 
+            Map[IntegerPart, {
+              System`TradingChartDump`$controlmin$4453, 
+               System`TradingChartDump`$controlmax$4453}]], {{{
+             IntegerPart[System`TradingChartDump`$controlmin$4453] + 0.5, 
+              System`TradingChartDump`$plotrangemin$4453}, {
+             1.5 + IntegerPart[System`TradingChartDump`$controlmin$4453], 
+              System`TradingChartDump`$plotrangemin$4453}}, {0, 1}}, 
+           Charting`DateScope -> System`TradingChartDump`$datescope$4453, 
+           Charting`LabelSide -> Right, AxesStyle -> If[
+             Part[System`TradingChartDump`$frame$4453, 2, 1], 
+             Part[System`TradingChartDump`$framestyle$4453, 2, 1], 
+             Part[System`TradingChartDump`$axesstyle$4453, 1]], LabelStyle -> 
+           Part[System`TradingChartDump`$tickstextstyle$4453, 1], 
+           Antialiasing -> False, Charting`TickLabels -> 
+           Part[System`TradingChartDump`$frameticks$4453, 2, 1], 
+           Charting`TickMarkers -> 
+           Part[System`TradingChartDump`$frameticks$4453, 2, 1], 
+           If[
+           System`TradingChartDump`$defaultlabelstyle$4453 =!= 
+            "GraphicsLabel", DefaultLabelStyle -> 
+            Part[System`TradingChartDump`$defaultlabelstyle$4453, 1], 
+            DefaultLabelStyle -> 
+            System`TradingChartDump`$defaultlabelstyle$4453], 
+           If[
+           System`TradingChartDump`$defaultframeticksstyle$4453 =!= 
+            "GraphicsFrameTicks", DefaultTicksStyle -> 
+            Part[System`TradingChartDump`$defaultframeticksstyle$4453, 1], 
+            DefaultTicksStyle -> 
+            System`TradingChartDump`$defaultframeticksstyle$4453]]]}, 
+        StandardForm, Graphics],
+       ImageSizeCache->{{-1.5, 533.5}, {-18., 0.00830735750457734}},
+       TrackedSymbols:>{}],
+      Axes->False,
+      Frame->False,
+      ImagePadding->{{1, 0.5}, {All, All}},
+      PlotLabel->None,
+      PlotRangeClipping->False,
+      PlotRangePadding->None], Offset[{0, 2}, {0.5, 0}], {Left, Top}, {
+     100, Automatic}]},
+   DynamicModuleValues:>{{
+     DownValues[System`TradingChartDump`$layoutData$4453] = {HoldPattern[
+          System`TradingChartDump`$layoutData$4453["Adjust"]] :> 0, 
+        HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "AllValues"]] :> CompressedData["
+1:eJytUiFQAzEQ7OCohYEkl/4nVWAQVHdmXQ0GDAIUM2ABCwYBFjRYsGAQoIsF
+Sy0YTLFF01w238GTmf71f+/2NnsX9w639udarRamvxTri/Hmc+Vwc52OYPFh
+8Hmy6KDhwaHg5f3uqN8e3c7ic5USHBI6+BRcDScru1eCn+lzOPG41zrBh+Ie
+b6/pCJT2wpPfs85jV/8I9ZT80kfIZ7HeS6fkGXwnurFl3nK63vRY6lyCpvdM
+g2e9pvleeLIewzqDUzXE4Di9HlnMT5/9tsW56rfQMDbQ8msLpa9m+I7e5/9i
+1m9woMdyLgZt6irvq2qkpX8zf7K/jrjgPZWNHBTe9NQteNI+nnzC6DFifubx
+uNS5OSg8KHO37Oeoq+yRYKK4g5YNBQtKLOSRZq+y79LwF12FN+uQRs+W6i/7
+K6z39MnTtw7n6DnvDvt56u5wHyrm1YwVXlRvzb2qc9/t8Pf7WaCemvsc6H+V
+40bg3lX0L9CfwHuF3P8xEI9Z/1eg3kieyPt1mR/Zr8sY87zWiPci9Br9LnVH
+6oj4BVAArYI=
+         "], HoldPattern[
+          System`TradingChartDump`$layoutData$4453["ChartStyle"]] :> {
+          RGBColor[0.368417, 0.506779, 0.709798], 
+          RGBColor[0.880722, 0.611041, 0.142051], 
+          RGBColor[0.560181, 0.691569, 0.194885], 
+          RGBColor[0.922526, 0.385626, 0.209179], 
+          RGBColor[0.528488, 0.470624, 0.701351], 
+          RGBColor[0.772079, 0.431554, 0.102387], 
+          RGBColor[0.363898, 0.618501, 0.782349], 
+          RGBColor[1, 0.75, 0], 
+          RGBColor[0.647624, 0.37816, 0.614037], 
+          RGBColor[0.571589, 0.586483, 0.], 
+          RGBColor[0.915, 0.3325, 0.2125], 
+          RGBColor[0.40082222609352647`, 0.5220066643438841, 0.85], 
+          RGBColor[
+          0.9728288904374106, 0.621644452187053, 0.07336199581899142], 
+          RGBColor[0.736782672705901, 0.358, 0.5030266573755369], 
+          RGBColor[0.28026441037696703`, 0.715, 0.4292089322474965]}, 
+        HoldPattern[
+          System`TradingChartDump`$layoutData$4453["Counter"]] :> 0, 
+        HoldPattern[
+          System`TradingChartDump`$layoutData$4453["DataMax"]] :> 9.28, 
+        HoldPattern[
+          System`TradingChartDump`$layoutData$4453["DataMin"]] :> 5.66, 
+        HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "GridLinesPosition"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "MainChartAllValues"]] :> CompressedData["
+1:eJyNUi1QgkEUZGxSZfT++Pg+EhaDZGa2USxQCJKc0SpWLQapkrFilWKQjFWr
+VCkWrJjl3u2dMxa9mZub9+7dvt23V5ycd0+3SqWS39js2nDVmWUGlWl7eVkx
+iPH9oFVeTAxmmU8YjObrRn9k8eDLphavL35Z1jv0pSDmDes07sZ+KeLsEXc3
+xU1ZijgKV0JEYXsx2VRq+OxwpSDlmcax9Pn7DPgKImv6cwZ+inwN3nybhcGN
+NLKss1gwfyu6Db4a/oVGWS4M1hIb7MgDm+YV6z+Ft0k4FdadyXK48OUDx3eO
+c8iYz7w13h08S6MacWrkn8GzbC8z8snD+8c84H/koe6oYL6gf4ybRcDrFfQn
+6jbpjHpCH0v9Du8SO4gdQ0dcRxzHuVscSh/LOWjq0cnvgKvS/wj9FPVr+qEh
+1+Of+L/+hzlHvzT2xXCd+ITYQsKOw5PwdtQf/7ODhG2b/Az/1EJkzy39tvy3
+Nv2j4JdFV/DjfZxPlbqrnGuVun/53cvD3K5zzjn6mpNfTl4xjn4W7Ffnu3rQ
+dVCHtGnVOf8C338YrYI=
+         "], HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "MainChartPoints"]] :> CompressedData["
+1:eJxdk71PAkEQxU9jYawsSERF4IgxaAxR8VuR4fP4RqmpTLRVW222oabWwkZr
+amos/BOoqbGw0cJKdu+9gt3kcvnd25l5O7PnXt+1buYcx5HJM4Nn1uH6Tt+a
+tSL4IK1+uDO+Is/L+31qYfhGXrQ4IGZ7fxUclO7gJ97uhsAhiWg5TI5K22wg
+x8SvT15HfubbkAlMvpDj0vNGj4HeMnhLfuM6YxC8DT9L4AR08g7qcf+ulHQ6
+j7wnxm6HnIR/1tuHf/IB/JEPLf3I4mOLTyw+tfjM4nP50vbG9JfCeckXlp4W
+c7wR40UCpoHopxLkZ38zYo4zpJ6RlDkg55OFjvmrrHzocQ94H3LT90fl0H/q
++el6Ki8PpgDrF6bnrQqWXsSbehHzoe5hP/wqD/eJ/kuYL/US/K1BL6NfYehl
+5I9Ar/j3LxGFXpGkWWCninzYr6qyaQ7M+BqY8TX//n0yvo5+Uq/Ly7NeLvSG
+PGl7f2DVgL8Y9CbmQ73p66+Mv8T/6co/Yr/8/w==
+         "], HoldPattern[
+          System`TradingChartDump`$layoutData$4453["OverlayIndicator"]] :> {},
+         HoldPattern[
+          System`TradingChartDump`$layoutData$4453["OverlayIndicatorCount"]] :> 
+        0, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "OverlayIndicatorLegends"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "OverlayIndicatorNames"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "OverlayIndicatorOptions"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "OverlayIndicatorParameters"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "OverlayIndicatorPoints"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "OverlayIndicatorValues"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453["OverPara"]] :> {}, 
+        HoldPattern[
+          System`TradingChartDump`$layoutData$4453["ScalingFunctions"]] :> {
+         Identity, Identity}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453["Space"]] :> 
+        0.9279999999999999, HoldPattern[
+          System`TradingChartDump`$layoutData$4453["SubplotIndicator"]] :> {},
+         HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "SubplotIndicatorGridLines"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "SubplotIndicatorLegends"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "SubplotIndicatorNames"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "SubplotIndicatorOptions"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "SubplotIndicatorParameters"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "SubplotIndicatorPoints"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+          "SubplotIndicatorValues"]] :> {}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453["XPosition"]] :> {1, 2, 3, 
+         4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
+          23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 
+         40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 
+         57, 58, 59, 60, 61, 62, 63, 64}, HoldPattern[
+          System`TradingChartDump`$layoutData$4453["YRange"]] :> 9.28, 
+        HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+           Pattern[Charting`s$, 
+            Blank[]], {
+            Pattern[System`InteractiveTradingChartDump`p$, 
+             Blank[]]}]] :> Part[
+          System`TradingChartDump`$layoutData$4453[Charting`s$], 
+          System`InteractiveTradingChartDump`p$], HoldPattern[
+          System`TradingChartDump`$layoutData$4453[
+           Pattern[Charting`s$, 
+            Blank[]], {
+             Pattern[System`InteractiveTradingChartDump`p$, 
+              Blank[]]} -> Pattern[System`InteractiveTradingChartDump`val$, 
+             Blank[]]]] :> (
+         System`TradingChartDump`$layoutData$4453[Charting`s$] = ReplacePart[
+           System`TradingChartDump`$layoutData$4453[Charting`s$], 
+           System`InteractiveTradingChartDump`p$ -> 
+           System`InteractiveTradingChartDump`val$])}}},
+   Initialization:>{
+    System`TradingChartDump`$indicatorpos$4453 = 
+      System`TradingChartDump`$length$4453; 
+     System`TradingChartDump`$layoutData$4453["ChartStyle"] = 
+      System`TradingChartDump`$markerstyle$4453; 
+     System`TradingChartDump`$modelData$4453["Data"] = 
+      System`TradingChartDump`$data$4453; 
+     System`TradingChartDump`$modelData$4453["Indicators"] = 
+      System`TradingChartDump`$indicators$4453; 
+     System`TradingChartDump`$modelData$4453["IndicatorStyle"] = 
+      System`TradingChartDump`$indicatorstyle$4453; 
+     System`TradingChartDump`$layoutData$4453["SubplotIndicatorNames"] = {}; 
+     System`TradingChartDump`$layoutData$4453["OverlayIndicatorNames"] = {}; 
+     System`TradingChartDump`$layoutData$4453["ScalingFunctions"] = {
+       System`TradingChartDump`$sy$4453, System`TradingChartDump`$isy$4453}; 
+     System`TradingChartDump`$layoutData$4453["SubplotIndicator"] = {}; 
+     System`TradingChartDump`$layoutData$4453["SubplotIndicatorPoints"] = {}; 
+     System`TradingChartDump`$layoutData$4453[
+       "SubplotIndicatorGridLines"] = {}; 
+     System`TradingChartDump`$layoutData$4453["SubplotIndicatorLegends"] = {}; 
+     System`TradingChartDump`$layoutData$4453["SubplotIndicatorValues"] = {}; 
+     System`TradingChartDump`$layoutData$4453[
+       "SubplotIndicatorParameters"] = {}; 
+     System`TradingChartDump`$layoutData$4453["SubplotIndicatorOptions"] = {}; 
+     System`TradingChartDump`$layoutData$4453["OverlayIndicator"] = {}; 
+     System`TradingChartDump`$layoutData$4453["OverlayIndicatorPoints"] = {}; 
+     System`TradingChartDump`$layoutData$4453["OverlayIndicatorLegends"] = {}; 
+     System`TradingChartDump`$layoutData$4453["OverlayIndicatorValues"] = {}; 
+     System`TradingChartDump`$layoutData$4453[
+       "OverlayIndicatorParameters"] = {}; 
+     System`TradingChartDump`$layoutData$4453["OverlayIndicatorOptions"] = {}; 
+     System`TradingChartDump`$layoutData$4453["OverPara"] = {}; 
+     System`TradingChartDump`$layoutData$4453["OverlayIndicatorCount"] = 0; 
+     Charting`FinancialIndicatorList[
+      System`TradingChartDump`$modelData$4453, 
+       System`TradingChartDump`$layoutData$4453, 
+       System`TradingChartDump`$indicators$4453]; 
+     Charting`TradingChartIndicator[
+      System`TradingChartDump`$modelData$4453, 
+       System`TradingChartDump`$layoutData$4453, "Candlestick"]; ReplaceAll[
+       If[
+       System`TradingChartDump`$layoutData$4453[
+         "OverlayIndicatorNames"] =!= {}, 
+        System`TradingChartDump`$layoutData$4453["AllValues"] = ReplaceAll[
+          Transpose[
+           Join[
+            System`TradingChartDump`$layoutData$4453["MainChartAllValues"], 
+            System`TradingChartDump`$layoutData$4453[
+            "OverlayIndicatorValues"]]], "" -> {}], 
+        System`TradingChartDump`$layoutData$4453["AllValues"] = Transpose[
+          System`TradingChartDump`$layoutData$4453["MainChartAllValues"]]], 
+       "" -> {}]; 
+     System`TradingChartDump`$plotrangemin$4453 = (Min[#] - 
+       0.05 (Max[#] - Min[#])& )[
+        Take[
+         System`TradingChartDump`$layoutData$4453["AllValues"], {1, 0} + 
+         Map[IntegerPart, {
+           System`TradingChartDump`$controlmin$4453, 
+            System`TradingChartDump`$controlmax$4453}]]]; 
+     System`TradingChartDump`$plotrangemax$4453 = (Max[#] + 
+       0.1 (Max[#] - Min[#])& )[
+        Take[
+         System`TradingChartDump`$layoutData$4453["AllValues"], {1, 0} + 
+         Map[IntegerPart, {
+           System`TradingChartDump`$controlmin$4453, 
+            System`TradingChartDump`$controlmax$4453}]]]; {
+       System`TradingChartDump`$plotrangemin$4453, 
+        System`TradingChartDump`$plotrangemax$4453} = ReplaceAll[
+        System`TradingChartDump`$sy$4453[{
+         System`TradingChartDump`$plotrangemin$4453, 
+          System`TradingChartDump`$plotrangemax$4453}], Alternatives[
+          Blank[Complex], Infinity, -Infinity] -> 
+        System`TradingChartDump`$sy$4453[
+           Min[System`TradingChartDump`$lows$4453]] - 0.1]; 
+     If[System`TradingChartDump`$plotrangemin$4453 == 
+       System`TradingChartDump`$plotrangemax$4453, {
+        System`TradingChartDump`$plotrangemin$4453, 
+         System`TradingChartDump`$plotrangemax$4453} = {
+        System`TradingChartDump`$plotrangemin$4453 - 0.5 
+         Abs[System`TradingChartDump`$plotrangemin$4453], 
+         System`TradingChartDump`$plotrangemax$4453 + 
+         0.5 Abs[System`TradingChartDump`$plotrangemax$4453]}]; 
+     System`TradingChartDump`$newgridlines$4453 = {{}, {}}; 
+     If[System`TradingChartDump`$gridlinesflag$4453, 
+       Part[System`TradingChartDump`$newgridlines$4453, 1] = Switch[
+          Part[System`TradingChartDump`$gridlines$4453, 1], Automatic, {
+           First[System`TradingChartDump`$gridlinesscope$4453], {"Year", 
+            Directive[
+             Opacity[0.4], 
+             Dashing[{}]]}}, 
+          Blank[], 
+          Part[System`TradingChartDump`$gridlines$4453, 1]]; 
+       Part[System`TradingChartDump`$newgridlines$4453, 1] = If[
+          And[
+          Part[System`TradingChartDump`$newgridlines$4453, 1] =!= None, 
+           System`TradingChartDump`$length$4453 > 0], 
+          DeleteCases[
+           Charting`gridlinesFinder[System`TradingChartDump`$dates$4453, 
+            Part[System`TradingChartDump`$newgridlines$4453, 1]], {}], 
+          Part[System`TradingChartDump`$newgridlines$4453, 1]]; 
+       System`TradingChartDump`$subpricegridlines$4453 = 
+        Part[System`TradingChartDump`$gridlines$4453, 2]; 
+       Part[System`TradingChartDump`$newgridlines$4453, 2] = 
+        If[System`TradingChartDump`$sy$4453 === Identity, 
+          
+          With[{System`TradingChartDump`minbox$ = 
+            System`TradingChartDump`$plotrangemin$4453}, 
+           Switch[
+            Part[System`TradingChartDump`$gridlines$4453, 2], Automatic, 
+            FindDivisions[{System`TradingChartDump`minbox$, #2}, 6]& , 
+            Blank[], 
+            Part[System`TradingChartDump`$gridlines$4453, 2]]], 
+          
+          With[{System`TradingChartDump`scy$ = 
+            System`TradingChartDump`$sy$4453, System`TradingChartDump`iscy$ = 
+            System`TradingChartDump`$isy$4453, 
+            System`TradingChartDump`minbox$ = 
+            System`TradingChartDump`$plotrangemin$4453}, 
+           Switch[
+            Part[System`TradingChartDump`$gridlines$4453, 2], Automatic, 
+            Map[System`TradingChartDump`scy$, DeleteCases[
+              FindDivisions[{
+                System`TradingChartDump`iscy$[
+                System`TradingChartDump`minbox$], 
+                Max[
+                 System`TradingChartDump`iscy$[#], 
+                 System`TradingChartDump`iscy$[#2]]}, 6], 0]& ], 
+            Blank[], 
+            Part[System`TradingChartDump`$gridlines$4453, 2]]]]; Null]; 
+     System`TradingChartDump`$ndigits$4453 = Last[
+         RealDigits[System`TradingChartDump`$maxohlc$4453]] + 2; Null},
+   UnsavedVariables:>{
+    Charting`FinancialIndicatorList, Charting`TradingChartIndicator}],
+  AspectRatio->Automatic,
+  Axes->False,
+  AxesLabel->{None, None},
+  Background->None,
+  Epilog->{},
+  Frame->False,
+  FrameLabel->{None, None},
+  GridLines->None,
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  ImageSize->{562., Automatic},
+  LabelStyle->{
+    GrayLevel[0.4], FontFamily -> "Arial"},
+  PlotRange->All,
+  PlotRangeClipping->False,
+  Prolog->{}]], "Output",
+ CellChangeTimes->{3.6992397074820566`*^9, 3.699239843495563*^9, 
+  3.699687971662051*^9}]
+}, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.6992370131758747`*^9}]
+},
+WindowSize->{759, 601},
+WindowMargins->{{Automatic, 135}, {-39, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (2016\:5e7410\:67088\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1803, 36, 121, "Input"],
+Cell[2386, 60, 23487, 613, 371, "Output"],
+Cell[25876, 675, 76606, 1509, 394, "Output"]
+}, Open  ]],
+Cell[102497, 2187, 89, 1, 50, "Input"]
+}
+]
+*)
+
